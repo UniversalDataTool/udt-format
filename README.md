@@ -1,4 +1,4 @@
-# Open Human Annotation Format
+# Open Human Annotation Task Format
 
 This document describes the Open Human Annotation format, an open-source format for describing task descriptions for human annotation jobs.
 
@@ -18,3 +18,28 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
 * A framework for **Predictable Quality**, so the accuracy and tolerance of the output dataset is known.
 * A framework for **Instantaneous Quoting** such that AI organizations can instantly see the cost of a project and compare with other providers to get the best rate.
 
+## Terminology
+
+* **Resultant Set** The solution dataset resulting from the human annotations
+
+## Schema
+
+```javascript
+{
+  // Desired accuracy for the resultant set
+  "targetAccuracy": 0.99,
+  
+  // Target amount of time for the task to be completed in
+  "targetDeliveryTime": "6 hours",
+  
+  // Interface details
+  "interface": { /* See Interface Specification */ },
+  
+  // Data for tasks to be performed
+  // E.g. Each task could be 1 image to be annotated, 1 paragraph to be annotated etc.
+  "taskData": [ /* See Task Data Specification */ ],
+  
+  // Solution examples, can be used to evaluate workers
+  "examples": [ /* See Example Specification */ ]
+}
+```
