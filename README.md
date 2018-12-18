@@ -60,7 +60,16 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
 | deduplication      |                                               |
 | text_correction    |                                               |
 
+### image_label Interface
+
+```javascript
+{
+}
+```
+
 ## Task Data
+
+
 
 ## Example
 
