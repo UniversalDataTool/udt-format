@@ -3,7 +3,7 @@
 This document describes the Open Human Annotation format, an open-source format for describing task descriptions for human annotation jobs.
 
 The following items are examples of human annotation tasks...
-* Drawing bounding boxes around cars
+* Drawing bounding boxes around objects or people in images.
 * Identifying key words and intent of text conversations
 * Collecting and augmenting data via internet research
 
