@@ -26,11 +26,14 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
 
 ```javascript
 {
-  // Desired accuracy for the resultant set
+  // Optional: Desired accuracy for the resultant set
   "targetAccuracy": 0.99,
   
-  // Target amount of time for the task to be completed in
+  // Optional: Target amount of time for the task to be completed in
   "targetDeliveryTime": "6 hours",
+  
+  // Optional: Maximum budget in USD,
+  "maxBudget": 75.00,
   
   // Interface details
   "interface": { /* See Interface Specification */ },
@@ -43,3 +46,21 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
   "examples": [ /* See Example Specification */ ]
 }
 ```
+
+## Interfaces
+
+| Interface          | Description                                   |
+| ------------------ | --------------------------------------------- |
+| image_label        |                                               |
+| image_segmentation |                                               |
+| data_collection    |                                               |
+| sentiment_analysis |                                               |
+| content_moderation |                                               |
+| transcription      |                                               |
+| deduplication      |                                               |
+| text_correction    |                                               |
+
+## Task Data
+
+## Example
+
