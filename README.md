@@ -51,19 +51,22 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
 
 | Interface          | Description                                   |
 | ------------------ | --------------------------------------------- |
-| image_label        |                                               |
-| image_segmentation |                                               |
-| data_collection    |                                               |
-| sentiment_analysis |                                               |
-| content_moderation |                                               |
-| transcription      |                                               |
-| deduplication      |                                               |
-| text_correction    |                                               |
+| image_label        |  Assign label(s) to an image or a predefined region of an image  |
+| image_segmentation |  Surround region(s) of an image, optionally labeling region(s).                                             |
+| video_label | Assign label(s) to a video or region(s) 
+| data_collection    | Retrieve information from source(s) or the internet.                                              |
+| text_sentiment_analysis | Analyze the sentiment of a message.                                              |
+| text_content_moderation | Analyze content for profanity, bullying or custom criteria.                                              |
+| transcription      | Derive text from images or video.                                              |
+| deduplication      | Compare information and remove duplicates.                                              |
+| text_correction    | Proofread text.                                              |
+| 
 
 ### image_label Interface
 
 ```javascript
 {
+  "": ""
 }
 ```
 
