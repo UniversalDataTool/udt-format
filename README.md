@@ -62,12 +62,19 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
 | text_correction    | Proofread text.                                              |
 | video_label | Assign label(s) to a video or labels to regions within an image |
 | video_segmentation | Surround region(s) containing objects within a video, optionally tagging object(s) |
+| 
 
 ### image_label
+
+TODO image of labeling interface.
+
+`image_label` is for training an AI to classify a region of an image (or an entire image). Typically classifications come from an existing set of possible answers. For building a set of classifications, see the [set_builder](#set-builder) interface.
 
 ```javascript
 {
   "interface": {
+    "type": "image_label",
+  
     // A list of labels available
     "availableLabels": ["human", "dog", "cat"],
     /* Also valid:
