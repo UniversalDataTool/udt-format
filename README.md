@@ -63,13 +63,51 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
 | video_label | Assign label(s) to a video or labels to regions within an image |
 | video_segmentation | Surround region(s) containing objects within a video, optionally tagging object(s) |
 
-### image_label Interface
+### image_label
 
 ```javascript
 {
-  "": ""
+  "interface": {
+    // A list of labels available
+    "availableLabels": ["human", "dog", "cat"],
+    /* Also valid:
+    "availableLabels": [
+      { "id": "human", "name": "Human", "description": "A person." },
+      { "id": "dog", "name": "Dog", "description": "A furry four legged creature" },
+      { "id": "cat", "name": "Cat", "description": "Furry creature with whiskers" }
+     ]
+    */
+    
+    // Pull from a common list of labels
+    "labelType": "animals",
+    
+    // How regions are specified in input and output
+    "regionFormat": "percentage_xywh"
+  },
+  "taskData": [
+    {
+      // URL pointing to image
+      "imageUrl": "https://...",
+
+      // Path to image. Available if upload is zip.
+      "imagePath": "imgs/myimage1.jpg"
+      
+      // Region to be labeled (if not specified, entire image is labeled)
+      "region": {/* determined by regionFormat */}
+    }
+  },
+  "examples": [
+    {
+      /* ... same information as taskData ... */
+      
+      // Expected output
+      "output": "label"
+    }
+  ]
 }
 ```
+
+
 
 ## Task Data
 
