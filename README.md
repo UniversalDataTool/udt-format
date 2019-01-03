@@ -147,9 +147,6 @@ TODO image of segmentation interface.
 
       // Path to image. Available if upload is zip.
       "imagePath": "imgs/myimage1.jpg"
-      
-      // Region to be labeled (if not specified, entire image is labeled)
-      "region": {/* determined by regionFormat */}
     }
   },
   "examples": [
@@ -157,7 +154,7 @@ TODO image of segmentation interface.
       /* ... same information as taskData ... */
       
       // Expected output
-      "output": "label"
+      "output": {/* determined by regionFormat*/}
     }
   ]
 }
