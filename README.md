@@ -174,4 +174,6 @@ TODO image of segmentation interface.
 | Region Format | Description |
 | ------------- | ----------- |
 | percentage_xywh | A four element array \[X,Y,Width,Height\] where X,Y is the percentage coordinate of the top left of a region with (0,0) in the top left corner. Width and Height are expressed as a percentage of the image.
+| pixel | Indicate whether each pixel is part of the region |
+| percentage_polyline_xy | An Array of lines, where each line is an array containing an array structured \[x,y\]. e.g. \[\[\[x1,y1\],\[x2,y2\]\]\] |
 
