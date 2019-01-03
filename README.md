@@ -113,6 +113,55 @@ TODO image of labeling interface.
 }
 ```
 
+### image_segmentation
+
+TODO image of segmentation interface.
+
+`image_segmentation` is for training an AI to to determine an area or outline within an image and potentially classify the identified area. Typically classifications come from an existing set of possible answers. For building a set of classifications, see the [set_builder](#set-builder) interface.
+
+```javascript
+{
+  "interface": {
+    "type": "image_segmentation",
+  
+    // A list of labels available
+    "availableLabels": ["human", "dog", "cat"],
+    /* Also valid:
+    "availableLabels": [
+      { "id": "human", "name": "Human", "description": "A person." },
+      { "id": "dog", "name": "Dog", "description": "A furry four legged creature" },
+      { "id": "cat", "name": "Cat", "description": "Furry creature with whiskers" }
+     ]
+    */
+    
+    // Pull from a common list of labels
+    "labelType": "animals",
+    
+    // How regions are specified in input and output
+    "regionFormat": "percentage_xywh"
+  },
+  "taskData": [
+    {
+      // URL pointing to image
+      "imageUrl": "https://...",
+
+      // Path to image. Available if upload is zip.
+      "imagePath": "imgs/myimage1.jpg"
+      
+      // Region to be labeled (if not specified, entire image is labeled)
+      "region": {/* determined by regionFormat */}
+    }
+  },
+  "examples": [
+    {
+      /* ... same information as taskData ... */
+      
+      // Expected output
+      "output": "label"
+    }
+  ]
+}
+```
 
 
 ## Task Data
@@ -120,4 +169,12 @@ TODO image of labeling interface.
 
 
 ## Example
+
+## Misc
+
+### Region Formats
+
+| Region Format | Description |
+| ------------- | ----------- |
+| percentage_xywh | A four element array \[X,Y,Width,Height\] where X,Y is the percentage coordinate of the top left of a region with (0,0) in the top left corner. Width and Height are expressed as a percentage of the image.
 
