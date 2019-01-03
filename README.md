@@ -62,7 +62,6 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
 | text_correction    | Proofread text.                                              |
 | video_label | Assign label(s) to a video or labels to regions within an image |
 | video_segmentation | Surround region(s) containing objects within a video, optionally tagging object(s) |
-| 
 
 ### image_label
 
