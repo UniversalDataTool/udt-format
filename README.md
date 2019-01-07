@@ -89,6 +89,9 @@ TODO image of labeling interface.
     
     // How regions are specified in input and output
     "regionFormat": "percentage_xywh",
+    
+    // Are there multiple regions per image?
+    "multipleRegions": false
   },
   "taskData": [
     {
@@ -143,7 +146,14 @@ TODO image of segmentation interface.
     // What does the region represent? See common region descriptions.
     "regionDescription": "faces",
     
-    // 
+    // Should multiple regions be created?
+    "multipleRegions": true,
+    
+    // What is the smallest allowed size per region as a percentage of the image area?
+    "minimumRegionSize": 0.01,
+    
+    // Are regions allowed to overlap?
+    "overlappingRegions": true
   },
   "taskData": [
     {
