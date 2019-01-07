@@ -153,7 +153,10 @@ TODO image of segmentation interface.
     "minimumRegionSize": 0.01,
     
     // Are regions allowed to overlap?
-    "overlappingRegions": true
+    "overlappingRegions": true,
+    
+    // For a region to be acceptable, how much overlap should it have with the solution set?
+    "regionMinAcceptableDifference": 0.1
   },
   "taskData": [
     {
@@ -200,4 +203,21 @@ e.g. if the `regionFormat` is `percentage_xywh`
 | ----------------- | ----------------- |
 | `false`           | `[0.1,0.2,0.5,0.5]` |
 | `true`            | `[[0.1,0.2,0.5,0.5], [0.4, 0.2, 0.2, 0.2]]` |
+
+### Region Acceptance Criteria
+
+The correct region is known as the target region (`T`). A region submitted by a worker is the candidate region (`C`).
+
+#### Minimum Acceptable Difference
+
+The Minimum Acceptable Difference technique determines the accuracy of a candidate region by examining the amount of the regions that are not overlapping relative to the total size of the target region.
+
+The area of `T` and `C` that is overlapping (where both regions are on top of eachother) is `Overlap(T,C)`. The area that is not overlapping is `Difference(T,C)`.
+
+`relativeDifference = Difference(T,C) / Area(T)`
+
+As the candidate region becomes less aligned, larger than or smaller than target region, the `relativeDifference` increases.
+
+`0.1` is a good rule of thumb for a minimum acceptable difference. If you decrease the minimum acceptable difference, consider the quality of your examples.
+
 
