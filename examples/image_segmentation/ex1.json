@@ -12,7 +12,11 @@
         "id": "dog",
         "description": "Canine Mammal"
       }
-    ]
+    ],
+    "multipleRegions": true,
+    "minimumRegionSize": 0.01,
+    "overlappingRegions": true,
+    "regionMinAcceptableDifference": 0.1
   },
   "taskData": [
     {
