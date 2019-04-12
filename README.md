@@ -178,6 +178,19 @@ TODO image of segmentation interface.
 }
 ```
 
+### Transcription
+
+```javascript
+{
+  "interface": {
+    "type": "transcription",
+    "form": <SurveyJSObject>
+  },
+  "taskData": [
+    { pdfUrl: "https://..." }
+  ]
+}
+```
 
 ## Task Data
 
