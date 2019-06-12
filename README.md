@@ -178,7 +178,7 @@ TODO image of segmentation interface.
 }
 ```
 
-### Transcription
+### Data Collection
 
 ```javascript
 {
@@ -187,14 +187,16 @@ TODO image of segmentation interface.
     "form": <SurveyJSObject>
   },
   "taskData": [
-    { pdfUrl: "https://..." }
+    { pdfUrl: "https://..." },
+    { markdown: "## Some Content" },
+    { url: "https://" }
   ]
 }
 ```
 
+You can build the `SurveyJSObject` using [this tool](https://surveyjs.io/create-survey/).
+
 ## Task Data
-
-
 
 ## Example
 
