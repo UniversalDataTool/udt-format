@@ -183,7 +183,7 @@ TODO image of segmentation interface.
 ```javascript
 {
   "interface": {
-    "type": "transcription",
+    "type": "data_collection",
     "form": <SurveyJSObject>
   },
   "taskData": [
