@@ -184,7 +184,7 @@ TODO image of segmentation interface.
 {
   "interface": {
     "type": "data_collection",
-    "form": <SurveyJSObject>
+    "surveyjs": <SurveyJSObject>
   },
   "taskData": [
     { pdfUrl: "https://..." },
