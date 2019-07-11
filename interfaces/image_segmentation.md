@@ -92,3 +92,43 @@ The area of `T` and `C` that is overlapping (where both regions are on top of ea
 As the candidate region becomes less aligned, larger than or smaller than target region, the `relativeDifference` increases.
 
 `0.1` is a good rule of thumb for a minimum acceptable difference. If you decrease the minimum acceptable difference, consider the quality of your examples.
+
+## Examples
+
+### Animal Classification
+
+```javascript
+{
+  "targetAccuracy": 0.98,
+  "targetDeliveryTime": "24 hours",
+  "interface": {
+    "selectedTaskType": "image_segmentation",
+    "availableLabels": [
+      {
+        "id": "cat",
+        "description": "Feline Mammal"
+      },
+      {
+        "id": "dog",
+        "description": "Canine Mammal"
+      }
+    ],
+    "multipleRegions": true,
+    "minimumRegionSize": 0.01,
+    "overlappingRegions": true,
+    "regionMinAcceptableDifference": 0.1
+  },
+  "taskData": [
+    {
+      "imageUrl": "https://media.gettyimages.com/photos/dog-and-cat-picture-id151350785"
+    },
+    {
+      "imageUrl": "https://media.gettyimages.com/photos/guess-who-rules-the-roost-in-that-house-picture-id500927195"
+    },
+    {
+      "imageUrl": "https://media.gettyimages.com/photos/she-simply-loves-animals-picture-id499806311"
+    }
+  ],
+  "examples": []
+}
+```
