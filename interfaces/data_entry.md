@@ -1,6 +1,6 @@
-# Data Collection
+# Data Entry
 
-The `data_collection` interface allows you to collect data using a form. It's ideal for many data entry, classification or research purposes.
+The `data_entry` interface allows you to collect data using a form. It's ideal for many data entry, classification or research purposes.
 
 * Markdown description containing images, links or instructions. Per-task and/or universal description.
 * Create a custom `surveyjs` JSON file. [This tool is very helpful](https://surveyjs.io/create-survey/).
@@ -11,7 +11,7 @@ The `data_collection` interface allows you to collect data using a form. It's id
 ```javascript
 {
   "interface": {
-    "type": "data_collection",
+    "type": "data_entry",
     "description"?: MarkdownDescription,
     "surveyjs": SurveyJSObject
   },
