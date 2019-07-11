@@ -13,6 +13,7 @@ Categorize text.
   "interface": {
     "type": "data_entry",
     "description"?: MarkdownDescription,
+    "multiple": false,
     "labels": [
       {
         "id": "gryffindor",
