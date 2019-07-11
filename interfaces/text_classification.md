@@ -1,0 +1,39 @@
+# Text Classification
+
+Categorize text.
+
+* Markdown instruction containing instructions
+* List of categories with descriptions
+* Classify into one or more categories.
+
+## Schema
+
+```javascript
+{
+  "interface": {
+    "type": "data_entry",
+    "description"?: MarkdownDescription,
+    "labels": [
+      {
+        "id": "gryffindor",
+        "displayName": "Gryffindor",
+        "description"?: "Daring, strong nerve and chivalry."
+      },
+      {
+        "id": "slytherin",
+        "displayName": "Slytherin",
+        "description"?: "Cunning and ambitious. Possibly dark wizard."
+      }
+    ]
+  },
+  "taskData": [
+    // These are all different types of task data that are acceptable
+    {
+      "document": "Harry"
+    },
+    {
+      "document": "Malfoy"
+    }
+  ]
+}
+```
