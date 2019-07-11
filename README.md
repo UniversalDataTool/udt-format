@@ -26,24 +26,18 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
 
 ```javascript
 {
-  // Optional: Desired accuracy for the resultant set
-  "targetAccuracy": 0.99,
-  
-  // Optional: Target amount of time for the task to be completed in
-  "targetDeliveryTime": "6 hours",
-  
-  // Optional: Maximum budget in USD,
-  "maxBudget": 75.00,
-  
   // Interface details
-  "interface": { /* See Interface Specification */ },
+  "interface": { /* see "Interfaces" */ },
   
   // Data for tasks to be performed
   // E.g. Each task could be 1 image to be annotated, 1 paragraph to be annotated etc.
-  "taskData": [ /* See Task Data Specification */ ],
+  "taskData": [ /* see the task data spec for the chosen interface */ ],
   
-  // Solution examples, can be used to evaluate workers
-  "examples": [ /* See Example Specification */ ]
+  // Optional: solution examples, can be used to evaluate workers
+  "examples": [ /* see example spec for chosen interface  */ ],
+  
+  // Optional: delivery parameters, e.g. budget or timeframe to complete within
+  "delivery": { /* see delivery spec */ }
 }
 ```
 
@@ -67,4 +61,20 @@ Click the link on any interface to see it's full schema, examples, and specifica
 | [text_classification](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/text_classification.md) |  Categorize text.                                             |
 | [text_entity_recognition](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/text_entity_recognition.md) |  Label named entities in text.                                             |
 
+## Delivery
+
+If the dataset is being uploaded to a provider, this provides information regarding your timeline and desired accuracy.
+
+```javascript
+{
+  // Optional: Desired accuracy for the resultant set
+  "targetAccuracy": 0.99,
+
+  // Optional: Target amount of time for the task to be completed in
+  "targetDeliveryTime": "6 hours",
+
+  // Optional: Maximum budget in USD,
+  "maxBudget": 75.00
+}
+```
 
