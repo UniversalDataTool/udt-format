@@ -38,3 +38,18 @@ Categorize text.
   ]
 }
 ```
+
+## Output
+
+```javascript
+// Input
+{
+  "document": "Harry"
+}
+
+// Output
+{
+  "document": "Harry",
+  "label": "gryffindor"
+}
+```
