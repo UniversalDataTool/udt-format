@@ -56,7 +56,7 @@ Click the link on any interface to see it's full schema, examples, and specifica
 | [image_label](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/image_label.md)        |  Assign label(s) to an image or a predefined region of an image  |
 | [image_segmentation](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/image_segmentation.md) |  Surround region(s) of an image, optionally labeling region(s).                                             |
 | video_label | Assign label(s) to a video or region(s) 
-| [data_entry](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/data_collection.md)    | Retrieve fields from source(s) or the internet.                                              |
+| [data_entry](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/data_entry.md)    | Retrieve fields from source(s) or the internet.                                              |
 | text_sentiment_analysis | Analyze the sentiment of a message.                                              |
 | text_content_moderation | Analyze content for profanity, bullying or custom criteria.                                              |
 | transcription      | Derive text from images or video.                                              |
