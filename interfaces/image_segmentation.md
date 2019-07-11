@@ -59,3 +59,36 @@
   ]
 }
 ```
+
+## Region Formats
+
+| Region Format | Description |
+| ------------- | ----------- |
+| percentage_xywh | A four element array \[X,Y,Width,Height\] where X,Y is the percentage coordinate of the top left of a region with (0,0) in the top left corner. Width and Height are expressed as a percentage of the image.
+| pixel | Indicate whether each pixel is part of the region |
+| percentage_polyline_xy | An array of lines making up a closed shape, where each line is an array containing an array containing the coordinates e.g. \[\[\[x1,y1\],\[x2,y2\], \[x3,y3\]\]\] |
+
+If `multipleRegions` is `true`, then regions are expressed as arrays.
+
+e.g. if the `regionFormat` is `percentage_xywh`
+
+| `multipleRegions` | `region`/`output` |
+| ----------------- | ----------------- |
+| `false`           | `[0.1,0.2,0.5,0.5]` |
+| `true`            | `[[0.1,0.2,0.5,0.5], [0.4, 0.2, 0.2, 0.2]]` |
+
+### Region Acceptance Criteria
+
+The correct region is known as the target region (`T`). A region submitted by a worker is the candidate region (`C`).
+
+#### Minimum Acceptable Difference
+
+The Minimum Acceptable Difference technique determines the accuracy of a candidate region by examining the amount of the regions that are not overlapping relative to the total size of the target region.
+
+The area of `T` and `C` that is overlapping (where both regions are on top of eachother) is `Overlap(T,C)`. The area that is not overlapping is `Difference(T,C)`.
+
+`relativeDifference = Difference(T,C) / Area(T)`
+
+As the candidate region becomes less aligned, larger than or smaller than target region, the `relativeDifference` increases.
+
+`0.1` is a good rule of thumb for a minimum acceptable difference. If you decrease the minimum acceptable difference, consider the quality of your examples.
