@@ -12,7 +12,6 @@ Label named entities in text.
   "interface": {
     "type": "data_entry",
     "description"?: MarkdownDescription,
-    "multiple": true,
     "labels": [
       {
         "id": "food",
