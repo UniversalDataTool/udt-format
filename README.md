@@ -64,5 +64,7 @@ Click the link on any interface to see it's full schema, examples, and specifica
 | text_correction    | Proofread text.                                              |
 | video_label | Assign label(s) to a video or labels to regions within an image |
 | video_segmentation | Surround region(s) containing objects within a video, optionally tagging object(s) |
+| [text_classification](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/text_classification.md) |  Categorize text.                                             |
+| [text_entity_recognition](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/text_entity_recognition.md) |  Label named entities in text.                                             |
 
 
