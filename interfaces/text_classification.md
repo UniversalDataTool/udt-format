@@ -35,11 +35,18 @@ Categorize text.
     {
       "document": "Malfoy"
     }
+  ],
+  // After completion...
+  "taskOutput": [
+    { "label": "gryffindor" },
+    { "label": "slytherin" }
   ]
 }
 ```
 
 ## Output
+
+Output will be either the label id or an array of label ids depending `interface.multiple`.
 
 ```javascript
 // Input
@@ -49,7 +56,20 @@ Categorize text.
 
 // Output
 {
-  "document": "Harry",
   "label": "gryffindor"
+}
+```
+
+For multiple classifications, the output will be shown as an array.
+
+```javascript
+// Input
+{
+  "document": "Could you label me?"
+}
+
+// Output
+{
+  "label": ["question", "about-labeling"]
 }
 ```
