@@ -70,6 +70,6 @@ For multiple classifications, the output will be shown as an array.
 
 // Output
 {
-  "label": ["question", "about-labeling"]
+  "labels": ["question", "about-labeling"]
 }
 ```
