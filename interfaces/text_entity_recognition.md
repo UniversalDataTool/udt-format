@@ -10,7 +10,7 @@ Label named entities in text.
 ```javascript
 {
   "interface": {
-    "type": "data_entry",
+    "type": "text_entity_recognition",
     "description"?: MarkdownDescription,
     "overlapAllowed": false,
     "labels": [
