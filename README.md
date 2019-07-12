@@ -37,7 +37,10 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
   "examples": [ /* see example spec for chosen interface  */ ],
   
   // Optional: delivery parameters, e.g. budget or timeframe to complete within
-  "delivery": { /* see delivery spec */ }
+  "delivery": { /* see delivery spec */ },
+  
+  // Given by vendor after annotation is completed.
+  "taskOutput": [ /* see output spec for chosen interface */ ] 
 }
 ```
 
