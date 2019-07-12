@@ -25,4 +25,6 @@ The `data_entry` interface allows you to collect data using a form. It's ideal f
   ]
 }
 ```
+## Output
 
+The output of data entry tasks is given by SurveyJS. Check the "Test Survey" tab using the [SurveyJS tool](https://surveyjs.io/create-survey/).
