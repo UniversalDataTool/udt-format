@@ -22,6 +22,12 @@ The `data_entry` interface allows you to collect data using a form. It's ideal f
     { imageUrl: "https://..." },
     { url: "https://" },
     { surveyjs: SurveyJSObject, markdown: "..." }
+  ],
+  "examples": [
+    {
+      data: { pdfUrl: "https://..." },
+      output: { "FieldName": "..." }
+    }
   ]
 }
 ```
