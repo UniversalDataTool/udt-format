@@ -48,9 +48,7 @@
   },
   "examples": [
     {
-      /* ... same information as taskData ... */
-      
-      // Expected output
+      "data": : { "imageUrl": "https://..." },
       "output": {/* determined by regionFormat*/}
     }
   ]
