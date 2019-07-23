@@ -43,10 +43,7 @@
   "taskData": [
     {
       // URL pointing to image
-      "imageUrl": "https://...",
-
-      // Path to image. Available if upload is zip.
-      "imagePath": "imgs/myimage1.jpg"
+      "imageUrl": "https://..."
     }
   },
   "examples": [
