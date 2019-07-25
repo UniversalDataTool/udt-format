@@ -66,6 +66,7 @@ Different regions have different JSON representations. All the numbers are repre
 | `point` | Point | `{regionType: "point", x, y }` |
 | `polygon` | Closed polygon | `{regionType: "polygon", points: [{x,y}, {x,y}, ...] }` |
 | `line` | Line made up of points | `{regionType: "line", points: [{x,y}, {x,y}, ...] }}` |
+| `pixel-mask` | A 2d matrix where each cell represents a classification | `{regionType: "pixel-mask", matrix: [[0,0,1,1,1, ...], [0,0,1,1,1, ...], [0,0,1,1,1,...], ...], centerX, centerY, width, height }}` |
 
 If `multipleRegions` is `true`, then regions in the input and output are expressed as arrays.
 
