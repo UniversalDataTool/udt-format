@@ -70,6 +70,8 @@ Different regions have different JSON representations. All the numbers are repre
 
 If `multipleRegions` is `true`, then regions in the input and output are expressed as arrays.
 
+Regions can also have a `color` property which takes a CSS web color.
+
 ### Region Acceptance Criteria
 
 The correct region is known as the target region (`T`). A region submitted by a worker is the candidate region (`C`).
