@@ -19,19 +19,19 @@
      ]
     */
     
+    // Optional: The type of region allowed. By default, any region is acceptable.
+    "regionTypesAllowed": ["bounding-box", "polygon", "full-segmentation", "point"],
+    
     // Pull from a common list of labels
     "labelType": "animals",
-    
-    // How regions are specified in input and output
-    "regionFormat": "percentage_xywh"
         
-    // What does the region represent? See common region descriptions.
+    // What does the region represent?
     "regionDescription": "faces",
     
     // Should multiple regions be created?
     "multipleRegions": true,
     
-    // What is the smallest allowed size per region as a percentage of the image area?
+    // What is the smallest allowed area per region as a percentage of the image area?
     "minimumRegionSize": 0.01,
     
     // Are regions allowed to overlap?
@@ -49,27 +49,25 @@
   "examples": [
     {
       "data": : { "imageUrl": "https://..." },
-      "output": {/* determined by regionFormat*/}
+      // Can be array or object depending on the value of `interface.multipleRegions`
+      "output": [{/* Shape */}]
     }
   ]
 }
 ```
 
-## Region Formats
+## Shapes
 
-| Region Format | Description |
-| ------------- | ----------- |
-| percentage_xywh | A four element array \[X,Y,Width,Height\] where X,Y is the percentage coordinate of the top left of a region with (0,0) in the top left corner. Width and Height are expressed as a percentage of the image.
-| percentage_polyline_xy | An array of lines making up a closed shape, where each line is an array containing an array containing the percentage coordinates e.g. \[\[\[x1,y1\],\[x2,y2\], \[x3,y3\]\]\] |
+Different regions have different JSON representations. All the numbers are represented as a percentage of the image width and height, not as pixels. Using the image width and height, they can easily be converted to pixels.
 
-If `multipleRegions` is `true`, then regions are expressed as arrays.
+| Region | Description | JSON Representation |
+| ------ | ----------- | ------------------- |
+| `bounding-box` | Rectangle | `{ regionType: "bounding-box", centerX, centerY, width, height }` |
+| `point` | Point | `{regionType: "point", x, y }` |
+| `polygon` | Closed polygon | `{regionType: "polygon", points: [{x,y}, {x,y}, ...] }` |
+| `line` | Line made up of points | `{regionType: "line", points: [{x,y}, {x,y}, ...] }}` |
 
-e.g. if the `regionFormat` is `percentage_xywh`
-
-| `multipleRegions` | `region`/`output` |
-| ----------------- | ----------------- |
-| `false`           | `[0.1,0.2,0.5,0.5]` |
-| `true`            | `[[0.1,0.2,0.5,0.5], [0.4, 0.2, 0.2, 0.2]]` |
+If `multipleRegions` is `true`, then regions in the input and output are expressed as arrays.
 
 ### Region Acceptance Criteria
 
