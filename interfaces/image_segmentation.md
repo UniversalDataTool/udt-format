@@ -21,12 +21,12 @@
     
     // Optional: The type of region allowed. By default, any region is acceptable.
     "regionTypesAllowed": ["bounding-box", "polygon", "full-segmentation", "point", "pixel-mask"],
-    
-    // Pull from a common list of labels
-    "labelType": "animals",
         
     // What does the region represent?
     "regionDescription": "faces",
+    
+    // Should there be multiple classifications for each region?
+    "multipleRegionLabels": false,
     
     // Should multiple regions be created?
     "multipleRegions": true,
