@@ -60,8 +60,7 @@
 | Region Format | Description |
 | ------------- | ----------- |
 | percentage_xywh | A four element array \[X,Y,Width,Height\] where X,Y is the percentage coordinate of the top left of a region with (0,0) in the top left corner. Width and Height are expressed as a percentage of the image.
-| pixel | Indicate whether each pixel is part of the region |
-| percentage_polyline_xy | An array of lines making up a closed shape, where each line is an array containing an array containing the coordinates e.g. \[\[\[x1,y1\],\[x2,y2\], \[x3,y3\]\]\] |
+| percentage_polyline_xy | An array of lines making up a closed shape, where each line is an array containing an array containing the percentage coordinates e.g. \[\[\[x1,y1\],\[x2,y2\], \[x3,y3\]\]\] |
 
 If `multipleRegions` is `true`, then regions are expressed as arrays.
 
