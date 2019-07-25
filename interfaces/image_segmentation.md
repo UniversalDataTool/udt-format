@@ -20,7 +20,7 @@
     */
     
     // Optional: The type of region allowed. By default, any region is acceptable.
-    "regionTypesAllowed": ["bounding-box", "polygon", "full-segmentation", "point"],
+    "regionTypesAllowed": ["bounding-box", "polygon", "full-segmentation", "point", "pixel-mask"],
     
     // Pull from a common list of labels
     "labelType": "animals",
