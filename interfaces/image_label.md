@@ -18,15 +18,6 @@
       { "id": "cat", "name": "Cat", "description": "Furry creature with whiskers" }
      ]
     */
-    
-    // Pull from a common list of labels
-    "labelType": "animals",
-    
-    // How regions are specified in input and output
-    "regionFormat": "percentage_xywh",
-    
-    // Are there multiple regions per image?
-    "multipleRegions": false
   },
   "taskData": [
     {
