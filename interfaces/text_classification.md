@@ -11,7 +11,7 @@ Categorize text.
 ```javascript
 {
   "interface": {
-    "type": "test_classification",
+    "type": "text_classification",
     "description"?: MarkdownDescription,
     "multiple": false,
     "labels": [
