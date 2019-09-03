@@ -1,4 +1,4 @@
-# Open Human Annotation Task Format
+# Open Human Annotation (OHA) Format
 
 This document describes the Open Human Annotation format, an open-source format for describing task descriptions for human annotation jobs.
 
