@@ -21,7 +21,8 @@ The `data_entry` interface allows you to collect data using a form. It's ideal f
     { markdown: "## Some Content" },
     { imageUrl: "https://..." },
     { url: "https://" },
-    { surveyjs: SurveyJSObject, markdown: "..." }
+    { surveyjs: SurveyJSObject, markdown: "..." },
+    { preloadedOutput: { "FieldName": "..." } }
   ],
   "examples": [
     {
