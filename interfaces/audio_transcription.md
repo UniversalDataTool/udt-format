@@ -10,7 +10,8 @@ The `audio_transcription` interface allows you to convert audio int o transcribe
 {
   "interface": {
     "type": "audio_transcription",
-    "description": "MarkdownDescription"
+    "description": "MarkdownDescription",
+    "phraseBank"?: Array<string> | UrlToCSV
   },
   "taskData": [
     { audioUrl: "https://...." }
