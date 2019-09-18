@@ -57,6 +57,7 @@ Click the link on any interface to see it's full schema, examples, and specifica
 | text_sentiment_analysis | Analyze the sentiment of a message.                                              |
 | text_content_moderation | Analyze content for profanity, bullying or custom criteria.                                              |
 | transcription      | Derive text from images or video.                                              |
+| [audio_transcription](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/image_label.md)      | Derive text from audio.                                              |
 | deduplication      | Compare information and remove duplicates.                                              |
 | text_correction    | Proofread text.                                              |
 | video_label | Assign label(s) to a video or labels to regions within an image |
