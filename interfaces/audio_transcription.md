@@ -1,6 +1,6 @@
 # Audio Transcription
 
-The `audio_transcription` interface allows you to convert audio int o transcribed text.
+The `audio_transcription` interface allows you to convert audio into transcribed text.
 
 * Markdown description containing images, links or instructions. Per-task and/or universal description.
 
@@ -11,6 +11,7 @@ The `audio_transcription` interface allows you to convert audio int o transcribe
   "interface": {
     "type": "audio_transcription",
     "description": "MarkdownDescription",
+    "language"?: LanguageString, // defaults to english
     "phraseBank"?: Array<string> | UrlToCSV
   },
   "taskData": [
@@ -24,6 +25,7 @@ The `audio_transcription` interface allows you to convert audio int o transcribe
   ]
 }
 ```
+
 ## Output
 
-Each `taskOutput` is a string.
+Each task output is a string representation of an audio file.
