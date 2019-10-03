@@ -7,6 +7,7 @@ The following items are examples of human annotation tasks...
 * Identifying key words and intent of text conversations
 * Collecting and augmenting data via internet research
 
+To test the OHA format, check out the [Universal Data Tool]("https://universaldatatool.com/"). Different types of data can be marked using the tool. Old data can be uploaded, or, can be created from a template
 ## Structure
 
 The scope of this document is broad and expected to undergo many iterations as advancements in the field define new interfaces for analyzing data and new types of datasets. Sections of the API that are subject to change are marked with ***UNSTABLE***.
