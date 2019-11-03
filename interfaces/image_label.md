@@ -2,6 +2,8 @@
 
 `image_label` is for training an AI to classify a region of an image (or an entire image). Classifications come from an existing set of possible answers.
 
+For complex answer logic, text questions, and multiple simultaneous classifications use the [data_entry](https://github.com/OpenHumanAnnotation/oha-format/blob/master/interfaces/data_entry.md) type with `imageUrl`s in `taskData`.
+
 ## Schema
 
 ```javascript
