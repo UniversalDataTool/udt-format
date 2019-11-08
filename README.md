@@ -65,6 +65,7 @@ Click the link on any interface to see it's full schema, examples, and specifica
 | video_segmentation | Surround region(s) containing objects within a video, optionally tagging object(s) |
 | [text_classification](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/text_classification.md) |  Categorize text.                                             |
 | [text_entity_recognition](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/text_entity_recognition.md) |  Label named entities in text.                                             |
+| [composite](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/composite.md) | Combine multiple OHA interfaces. |
 
 ## Delivery
 
