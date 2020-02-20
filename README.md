@@ -1,13 +1,13 @@
-# Open Human Annotation (OHA) Format
+# Universal Data Tool (UDT) Format
 
-This document describes the Open Human Annotation format, an open-source format for describing task descriptions for human annotation jobs.
+This document describes the Universal Data Tool format, an open-source format for describing task descriptions for human annotation jobs.
 
 The following items are examples of human annotation tasks...
 * Drawing bounding boxes around objects or people in images.
 * Identifying key words and intent of text conversations
 * Collecting and augmenting data via internet research
 
-To test the OHA format, check out the [Universal Data Tool](https://universaldatatool.com/). Different types of data can be marked using the tool. Old data can be uploaded, or, can be created from a template
+To test the UDT format, check out the [Universal Data Tool](https://universaldatatool.com/). Different types of data can be marked using the tool. Old data can be uploaded, or, can be created from a template
 ## Structure
 
 The scope of this document is broad and expected to undergo many iterations as advancements in the field define new interfaces for analyzing data and new types of datasets. Sections of the API that are subject to change are marked with ***UNSTABLE***.
@@ -65,7 +65,7 @@ Click the link on any interface to see it's full schema, examples, and specifica
 | video_segmentation | Surround region(s) containing objects within a video, optionally tagging object(s) |
 | [text_classification](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/text_classification.md) |  Categorize text.                                             |
 | [text_entity_recognition](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/text_entity_recognition.md) |  Label named entities in text.                                             |
-| [composite](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/composite.md) | Combine multiple OHA interfaces. |
+| [composite](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/composite.md) | Combine multiple UDT interfaces. |
 
 ## Delivery
 
