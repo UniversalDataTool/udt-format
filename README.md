@@ -12,6 +12,8 @@ To test the UDT format, check out the [Universal Data Tool](https://universaldat
 
 The scope of this document is broad and expected to undergo many iterations as advancements in the field define new interfaces for analyzing data and new types of datasets. Sections of the API that are subject to change are marked with ***UNSTABLE***.
 
+> Note: This standard used to be called the ".oha.json" or "Open Human Annotation" JSON format. There may be some old references to "oha".
+
 ## Principles
 
 The purpose of the Open Human Annotation Format is to make attaining human annotations simple and effective for organizations with AI and machine learning datasets. To this end, this format aims to accomplish all of the following important objectives...
