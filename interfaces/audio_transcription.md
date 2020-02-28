@@ -12,7 +12,7 @@ The `audio_transcription` interface allows you to convert audio into transcribed
     "type": "audio_transcription",
     "description": "MarkdownDescription",
     "language"?: LanguageString, // defaults to english
-    "phraseBank"?: Array<string> | UrlToCSV,
+    "phraseBank"?: UrlToCSV,
     "onlyUseWordsInPhraseBank": boolean, // defaults to false
     "transcriptionType": "simple" | "proper" //defaults to simple
   },
