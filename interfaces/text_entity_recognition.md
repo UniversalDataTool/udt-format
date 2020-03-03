@@ -1,4 +1,4 @@
-# Text Entity Recognition
+# Named Entity Recognition (recognize words/phrases in text)
 
 Label named entities in text.
 
@@ -10,7 +10,7 @@ Label named entities in text.
 ```javascript
 {
   "interface": {
-    "type": "text_entity_recognition",
+    "type": "text_entity_recognition", // or "named_entity_recognition"
     "description"?: MarkdownDescription,
     "overlapAllowed": false,
     "labels": [
