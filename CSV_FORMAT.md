@@ -1,7 +1,5 @@
 # Universal Data Tool Format (*.udt.csv) Specification
 
-***UNSTABLE***
-
 A `*.udt.csv` file can be used the same way as a `*.udt.json` file. An example `*.udt.csv` file is show below:
 
 | path      | .                                                                                                                                 | imageUrl                                                                              | output | output.regionType | output.centerX    | output.centerY    | output.width      | output.height     | output.classification | output.labels | output.color      |
