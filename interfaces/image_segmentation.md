@@ -16,7 +16,7 @@
       { "id": "human", "name": "Human", "description": "A person." },
       { "id": "dog", "name": "Dog", "description": "A furry four legged creature" },
       { "id": "cat", "name": "Cat", "description": "Furry creature with whiskers" }
-     ]
+     ],
     */
     
     // Optional: The type of region allowed. By default, any region is acceptable.
