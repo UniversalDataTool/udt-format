@@ -44,6 +44,14 @@
     {
       // URL pointing to image
       "imageUrl": "https://..."
+    },
+    {
+      "videoUrl": "https://....mp4",
+      "videoFrameAt": 2000 // ms
+    },
+    {
+      "videoUrl": "https://....mp4",
+      "videoFrame": 48 // frame #
     }
   },
   "examples": [
