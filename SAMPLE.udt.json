@@ -1,0 +1,22 @@
+{
+  "interface": {
+    "type": "image_segmentation",
+    "availableLabels": [
+      "valid",
+      "invalid"
+    ],
+    "regionTypesAllowed": [
+      "bounding-box",
+      "polygon",
+      "point"
+    ]
+  },
+  "taskData": [
+    {
+      "imageUrl": "https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image1.jpg"
+    },
+    {
+      "imageUrl": "https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image2.jpg"
+    }
+  ]
+}
