@@ -1,0 +1,4 @@
+path,.,imageUrl,output,output.0.regionType,output.0.centerX,output.0.centerY,output.0.width,output.0.height,output.0.classification,output.0.color
+interface,"{""type"":""image_segmentation"",""availableLabels"":[""valid"",""invalid""],""regionTypesAllowed"":[""bounding-box"",""polygon"",""point""]}",,,,,,,,,
+samples.0,,https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image1.jpg,,bounding-box,0.2919799498746867,0.3317669172932331,0.3634085213032581,0.09962406015037595,valid,"hsl(105,100%,50%)"
+samples.1,,https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image2.jpg,null,,,,,,,
