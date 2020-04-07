@@ -55,4 +55,5 @@ All colors are based on Material UI color names
 ## Concerns
 
 * Brush is not a name that makes it totally clear what this is used for
-* It's not clear if the brush should be within `taskData` or a new field.
+* It's not clear if the brush should be within `taskData` or a new field
+* The key on the sample should be `paint`, not `brush`
