@@ -2,7 +2,7 @@
 
 > ***UNSTABLE***
 
-Sample brushes are a simple way to identify data by color. This can be helpful in collaborative sessions when people want to mark samples for review or indicate who completed the sample. It can also be used for reviewing the output of a machine learning 
+Sample brushes are a simple way to identify data by color. This can be helpful in collaborative sessions when people want to mark samples for review or indicate who completed the sample. It can also be used for reviewing the output of a machine learning algorithm.
 
 ## Usage
 
