@@ -1,5 +1,7 @@
 # Universal Data Tool Format (*.udt.csv) Specification
 
+A `*.udt.csv` file is a [CSV](https://tools.ietf.org/html/rfc4180) representation of a Universal Data Tool interface, sample data and labels.
+
 A `*.udt.csv` file can be used the same way as a `*.udt.json` file. An example `*.udt.csv` file is show below:
 
 | path      | .                                                                                                                                 | imageUrl                                                                              | output | output.regionType | output.centerX    | output.centerY    | output.width      | output.height     | output.classification | output.labels | output.color      |
