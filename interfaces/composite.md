@@ -8,7 +8,7 @@ Use the `composite` interface type to combine several interfaces together.
 {
   "interface": {
     "type": "composite",
-    
+
     "fields": [
       {
         "fieldName": "some_field_name",
@@ -16,7 +16,7 @@ Use the `composite` interface type to combine several interfaces together.
       }
     ]
   },
-  "taskData": [
+  "samples": [
     {
       /*
         Any applicable task data for the defined interfaces
@@ -25,8 +25,8 @@ Use the `composite` interface type to combine several interfaces together.
   },
   "examples": [
     {
-      /* ... same information as taskData ... */
-      
+      /* ... same information as samples ... */
+
       // Expected output
       "output": {
         // Each key is a fieldName, the output is the output from that interface

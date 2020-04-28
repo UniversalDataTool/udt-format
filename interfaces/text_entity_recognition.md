@@ -2,8 +2,8 @@
 
 Label named entities in text.
 
-* Markdown instruction containing instructions.
-* List of entities with descriptions.
+- Markdown instruction containing instructions.
+- List of entities with descriptions.
 
 ## Schema
 
@@ -26,17 +26,20 @@ Label named entities in text.
       }
     ]
   },
-  "taskData": [
+  "samples": [
     {
-      "document": "This strainer makes a great hat, I'll wear it while I serve spaghetti!"
+      "document": "This text document is broken into selectable chunks."
     }
   ],
   // OPTIONAL
-  "taskOutput": [
-    "entities": [
-      { text: "strainer", label: "hat", start: 5, end: 13 },
-      { text: "spaghetti", label: "food", start: 60, end: 69 }
-    ]
+  "examples": [
+    "document": "This strainer makes a great hat, I'll wear it while I serve spaghetti",
+    "output": {
+      "entities": [
+        { text: "strainer", label: "hat", start: 5, end: 13 },
+        { text: "spaghetti", label: "food", start: 60, end: 69 }
+      ]
+    }
   ]
 }
 ```

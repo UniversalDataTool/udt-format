@@ -10,7 +10,7 @@ For complex answer logic, text questions, and multiple simultaneous classificati
 {
   "interface": {
     "type": "image_label",
-  
+
     // A list of labels available
     "availableLabels": ["human", "dog", "cat"],
     /* Also valid:
@@ -21,22 +21,22 @@ For complex answer logic, text questions, and multiple simultaneous classificati
      ]
     */
   },
-  "taskData": [
+  "samples": [
     {
       // URL pointing to image
       "imageUrl": "https://...",
 
       // Path to image. Available if upload is zip.
       "imagePath": "imgs/myimage1.jpg"
-      
+
       // Region to be labeled (if not specified, entire image is labeled)
       "region": {/* determined by regionFormat */}
     }
   },
   "examples": [
     {
-      /* ... same information as taskData ... */
-      
+      /* ... same information as samples ... */
+
       // Expected output
       "output": "label"
     }

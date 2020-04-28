@@ -8,7 +8,7 @@
 {
   "interface": {
     "type": "image_segmentation",
-  
+
     // A list of labels available
     "availableLabels": ["human", "dog", "cat"],
     /* Also valid:
@@ -18,29 +18,29 @@
       { "id": "cat", "name": "Cat", "description": "Furry creature with whiskers" }
      ],
     */
-    
+
     // Optional: The type of region allowed. By default, any region is acceptable.
     "regionTypesAllowed": ["bounding-box", "polygon", "full-segmentation", "point", "pixel-mask"],
-        
+
     // What does the region represent?
     "regionDescription": "faces",
-    
+
     // Should there be multiple classifications for each region?
     "multipleRegionLabels": false,
-    
+
     // Should multiple regions be created?
     "multipleRegions": true,
-    
+
     // What is the smallest allowed area per region as a percentage of the image area?
     "minimumRegionSize": 0.01,
-    
+
     // Are regions allowed to overlap?
     "overlappingRegions": true,
-    
+
     // For a region to be acceptable, how much overlap should it have with the solution set?
     "regionMinAcceptableDifference": 0.1
   },
-  "taskData": [
+  "samples": [
     {
       // URL pointing to image
       "imageUrl": "https://..."
@@ -56,7 +56,7 @@
   },
   "examples": [
     {
-      "data": : { "imageUrl": "https://..." },
+      "imageUrl": "https://...",
       // Can be array or object depending on the value of `interface.multipleRegions`
       "output": [{/* Shape */}]
     }
@@ -68,13 +68,13 @@
 
 Different regions have different JSON representations. All the numbers are represented as a percentage of the image width and height, not as pixels. Using the image width and height, they can easily be converted to pixels.
 
-| Region | Description | JSON Representation |
-| ------ | ----------- | ------------------- |
-| `bounding-box` | Rectangle | `{ regionType: "bounding-box", centerX, centerY, width, height }` |
-| `point` | Point | `{regionType: "point", x, y }` |
-| `polygon` | Closed polygon | `{regionType: "polygon", points: [{x,y}, {x,y}, ...] }` |
-| `line` | Line made up of points | `{regionType: "line", points: [{x,y}, {x,y}, ...] }}` |
-| `pixel-mask` | A 2d matrix where each cell represents a classification | `{regionType: "pixel-mask", matrix: [[0,0,1,1,1, ...], [0,0,1,1,1, ...], [0,0,1,1,1,...], ...], centerX, centerY, width, height, classifications: ["someRegionId", ...] }}` |
+| Region         | Description                                             | JSON Representation                                                                                                                                                         |
+| -------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `bounding-box` | Rectangle                                               | `{ regionType: "bounding-box", centerX, centerY, width, height }`                                                                                                           |
+| `point`        | Point                                                   | `{regionType: "point", x, y }`                                                                                                                                              |
+| `polygon`      | Closed polygon                                          | `{regionType: "polygon", points: [{x,y}, {x,y}, ...] }`                                                                                                                     |
+| `line`         | Line made up of points                                  | `{regionType: "line", points: [{x,y}, {x,y}, ...] }}`                                                                                                                       |
+| `pixel-mask`   | A 2d matrix where each cell represents a classification | `{regionType: "pixel-mask", matrix: [[0,0,1,1,1, ...], [0,0,1,1,1, ...], [0,0,1,1,1,...], ...], centerX, centerY, width, height, classifications: ["someRegionId", ...] }}` |
 
 If `multipleRegions` is `true`, then regions in the input and output are expressed as arrays.
 

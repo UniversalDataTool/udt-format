@@ -2,9 +2,9 @@
 
 The `data_entry` interface allows you to collect data using a form. It's ideal for many data entry, classification or research purposes.
 
-* Markdown description containing images, links or instructions. Per-task and/or universal description.
-* Create a custom `surveyjs` JSON file. [This tool from surveyjs.io is very helpful](https://surveyjs.io/create-survey/). To manually create the object, [reference this specification](https://github.com/CollegeAI/material-survey/blob/master/docs/material-survey-format.md).
-* PDF URLs, Image URLs, External Site URL or markdown description for each task.
+- Markdown description containing images, links or instructions. Per-task and/or universal description.
+- Create a custom `surveyjs` JSON file. [This tool from surveyjs.io is very helpful](https://surveyjs.io/create-survey/). To manually create the object, [reference this specification](https://github.com/CollegeAI/material-survey/blob/master/docs/material-survey-format.md).
+- PDF URLs, Image URLs, External Site URL or markdown description for each task.
 
 ## Schema
 
@@ -15,7 +15,7 @@ The `data_entry` interface allows you to collect data using a form. It's ideal f
     "description"?: MarkdownDescription,
     "surveyjs": SurveyJSObject
   },
-  "taskData": [
+  "samples": [
     // These are all different types of task data that are acceptable
     { pdfUrl: "https://..." },
     { markdown: "## Some Content" },
@@ -26,12 +26,13 @@ The `data_entry` interface allows you to collect data using a form. It's ideal f
   ],
   "examples": [
     {
-      data: { pdfUrl: "https://..." },
+      pdfUrl: "https://...",
       output: { "FieldName": "..." }
     }
   ]
 }
 ```
+
 ## Output
 
 The output of data entry tasks is given by SurveyJS. Check the "Test Survey" tab using the [SurveyJS tool](https://surveyjs.io/create-survey/).
