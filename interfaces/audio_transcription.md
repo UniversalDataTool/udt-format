@@ -24,15 +24,15 @@ The `audio_transcription` interface allows you to convert audio into transcribed
   "examples": [
     {
       audioUrl: "https://...",
-      output: "..."
+      annotation: "..."
     }
   ]
 }
 ```
 
-## Output
+## Annotation
 
-Each task output is a string representation of an audio file. The output format is determined by `interface.transcriptionType`.
+Each task annotation is a string representation of an audio file. The annotation format is determined by `interface.transcriptionType`.
 
 ## Simple Transcription Type
 

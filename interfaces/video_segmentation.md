@@ -48,7 +48,7 @@ The `video_segmentation` interface allows you to classify videos or place boundi
   "examples": [
     {
       videoUrl: "https://...",
-      output: [/** Regions **/]
+      annotation: [/** Regions **/]
     }
   ]
 }

@@ -39,37 +39,37 @@ Categorize text.
   "examples": [
     {
       // same as samples...
-      output: { "label": "gryffindor" }
+      "annotation": { "label": "gryffindor" }
     }
   ]
 }
 ```
 
-## Output
+## Annotation
 
-Output will be either the label id or an array of label ids depending `interface.multiple`.
+Annotation will be either the label id or an array of label ids depending `interface.multiple`.
 
 ```javascript
-// Input
+// Input Data
 {
   "document": "Harry"
 }
 
-// Output
+// Annotation
 {
   "label": "gryffindor"
 }
 ```
 
-For multiple classifications, the output will be shown as an array.
+For multiple classifications, the annotation will be shown as an array.
 
 ```javascript
-// Input
+// Input Data
 {
   "document": "Could you label me?"
 }
 
-// Output
+// Annotation
 {
   "labels": ["question", "about-labeling"]
 }

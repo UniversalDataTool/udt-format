@@ -37,8 +37,8 @@ For complex answer logic, text questions, and multiple simultaneous classificati
     {
       /* ... same information as samples ... */
 
-      // Expected output
-      "output": "label"
+      // Expected annotation
+      "annotation": "label"
     }
   ]
 }

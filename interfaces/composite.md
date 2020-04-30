@@ -27,10 +27,10 @@ Use the `composite` interface type to combine several interfaces together.
     {
       /* ... same information as samples ... */
 
-      // Expected output
-      "output": {
-        // Each key is a fieldName, the output is the output from that interface
-        "some_field_name": {/*... whatever output goes with the interface defined for this field ...*/}
+      // Expected annotation
+      "annotation": {
+        // Each key is a fieldName, the annotation is the annotation from that interface
+        "some_field_name": {/*... whatever annotation goes with the interface defined for this field ...*/}
       }
     }
   ]

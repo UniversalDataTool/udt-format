@@ -22,17 +22,17 @@ The `data_entry` interface allows you to collect data using a form. It's ideal f
     { imageUrl: "https://..." },
     { url: "https://" },
     { surveyjs: SurveyJSObject, markdown: "..." },
-    { preloadedOutput: { "FieldName": "..." } }
+    { preloadedAnnotation: { "FieldName": "..." } }
   ],
   "examples": [
     {
       pdfUrl: "https://...",
-      output: { "FieldName": "..." }
+      annotation: { "FieldName": "..." }
     }
   ]
 }
 ```
 
-## Output
+## Annotation
 
-The output of data entry tasks is given by SurveyJS. Check the "Test Survey" tab using the [SurveyJS tool](https://surveyjs.io/create-survey/).
+The annotation of data entry tasks is given by SurveyJS. Check the "Test Survey" tab using the [SurveyJS tool](https://surveyjs.io/create-survey/).

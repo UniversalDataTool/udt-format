@@ -7,7 +7,7 @@
   "samples": [
     {
       "imageUrl": "https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image1.jpg",
-      "output": [
+      "annotation": [
         {
           "regionType": "bounding-box",
           "centerX": 0.2919799498746867,
@@ -21,7 +21,7 @@
     },
     {
       "imageUrl": "https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image2.jpg",
-      "output": null
+      "annotation": null
     }
   ]
 }

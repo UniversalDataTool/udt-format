@@ -58,7 +58,7 @@
     {
       "imageUrl": "https://...",
       // Can be array or object depending on the value of `interface.multipleRegions`
-      "output": [{/* Shape */}]
+      "annotation": [{/* Shape */}]
     }
   ]
 }
@@ -76,7 +76,7 @@ Different regions have different JSON representations. All the numbers are repre
 | `line`         | Line made up of points                                  | `{regionType: "line", points: [{x,y}, {x,y}, ...] }}`                                                                                                                       |
 | `pixel-mask`   | A 2d matrix where each cell represents a classification | `{regionType: "pixel-mask", matrix: [[0,0,1,1,1, ...], [0,0,1,1,1, ...], [0,0,1,1,1,...], ...], centerX, centerY, width, height, classifications: ["someRegionId", ...] }}` |
 
-If `multipleRegions` is `true`, then regions in the input and output are expressed as arrays.
+If `multipleRegions` is `true`, then regions in the input and annotation are expressed as arrays.
 
 Regions can also have a `color` property which takes a CSS web color.
 
