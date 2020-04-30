@@ -121,7 +121,7 @@ As the candidate region becomes less aligned, larger than or smaller than target
     "overlappingRegions": true,
     "regionMinAcceptableDifference": 0.1
   },
-  "taskData": [
+  "samples": [
     {
       "imageUrl": "https://media.gettyimages.com/photos/dog-and-cat-picture-id151350785"
     },

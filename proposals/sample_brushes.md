@@ -17,7 +17,7 @@ Place a `brush` attribute on some samples in `taskData` as shown below. The samp
       "invalid"
     ]
   },
-  "taskData": [
+  "samples": [
     {
       "brush": "review",
       "imageUrl": "https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image1.jpg"
@@ -30,7 +30,7 @@ Place a `brush` attribute on some samples in `taskData` as shown below. The samp
 }
 ```
 
-If a sample does not have a brush, "complete" is used if it has corresponding `taskOutput` and "incomplete" is used if it does not have a corresponding `taskOutput`.
+If a sample does not have a brush, "complete" is used if it has corresponding `annotation` and "incomplete" is used if it does not have a corresponding `annotation`.
 
 ### Brush Colors
 
@@ -55,5 +55,5 @@ All colors are based on Material UI color names
 ## Concerns
 
 - Brush is not a name that makes it totally clear what this is used for
-- It's not clear if the brush should be within `taskData` or a new field
+- It's not clear if the brush should be within `samples` or a new field
 - The key on the sample should be `paint` or `brushColor`, not `brush`
