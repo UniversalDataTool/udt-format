@@ -1,15 +1,14 @@
-# Universal Data Tool Format (*.udt.csv) Specification
+# Universal Data Tool Format (\*.udt.csv) Specification
 
 A `*.udt.csv` file is a [CSV](https://tools.ietf.org/html/rfc4180) representation of a Universal Data Tool interface, sample data and labels.
 
 A `*.udt.csv` file can be used the same way as a `*.udt.json` file. An example `*.udt.csv` file is show below:
 
 | path      | .                                                                                                                                 | imageUrl                                                                              | output | output.regionType | output.centerX    | output.centerY    | output.width      | output.height     | output.classification | output.labels | output.color      |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|--------|-------------------|-------------------|-------------------|-------------------|-------------------|-----------------------|---------------|-------------------|
+| --------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------ | ----------------- | ----------------- | ----------------- | ----------------- | ----------------- | --------------------- | ------------- | ----------------- |
 | interface | {"type":"image_segmentation","availableLabels":["valid","invalid"],"regionTypesAllowed":["bounding-box"],"multipleRegions":false} |                                                                                       |        |                   |                   |                   |                   |                   |                       |               |                   |
 | samples.0 |                                                                                                                                   | https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image1.jpg |        | bounding-box      | 0.284214473190851 | 0.331271091113611 | 0.364454443194601 | 0.111361079865017 | valid                 |               | hsl(185,100%,50%) |
 | samples.1 |                                                                                                                                   | https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image2.jpg | null   |                   |                   |                   |                   |                   |                       |               |                   |
-
 
 A UDT CSV has one or more rows containing metadata, in the example above, we can see the `interface` row has some information regarding how to construct the interface to edit the samples.
 

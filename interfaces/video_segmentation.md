@@ -1,7 +1,5 @@
 # Video Segmentation
 
-> ***Unstable*** This is currently a draft
-
 The `video_segmentation` interface allows you to classify videos or place bounding boxes, polygons or regions with labels on a video.
 
 ## Schema
@@ -21,40 +19,37 @@ The `video_segmentation` interface allows you to classify videos or place boundi
       { "id": "cat", "name": "Cat", "description": "Furry creature with whiskers" }
      ],
     */
-    
+
     // Optional: The type of region allowed. By default, any region is acceptable.
     "regionTypesAllowed": ["bounding-box", "polygon", "full-segmentation", "point", "pixel-mask"],
-        
+
     // What does the region represent?
     "regionDescription": "faces",
-    
+
     // Should there be multiple classifications for each region?
     "multipleRegionLabels": false,
-    
+
     // Should multiple regions be created?
     "multipleRegions": true,
-    
+
     // What is the smallest allowed area per region as a percentage of the image area?
     "minimumRegionSize": 0.01,
-    
+
     // Are regions allowed to overlap?
     "overlappingRegions": true,
-    
+
     // For a region to be acceptable, how much overlap should it have with the solution set?
     "regionMinAcceptableDifference": 0.1
   },
-  "taskData": [
+  "samples": [
     // These are all different types of task data that are acceptable
     { videoUrl: "https://..." }
   ],
   "examples": [
     {
-      data: { videoUrl: "https://..." },
+      videoUrl: "https://...",
       output: [/** Regions **/]
     }
   ]
 }
 ```
-## Output
-
-TODO

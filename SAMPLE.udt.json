@@ -1,36 +1,27 @@
 {
   "interface": {
     "type": "image_segmentation",
-    "availableLabels": [
-      "valid",
-      "invalid"
-    ],
-    "regionTypesAllowed": [
-      "bounding-box",
-      "polygon",
-      "point"
-    ]
+    "availableLabels": ["valid", "invalid"],
+    "regionTypesAllowed": ["bounding-box", "polygon", "point"]
   },
-  "taskData": [
+  "samples": [
     {
-      "imageUrl": "https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image1.jpg"
+      "imageUrl": "https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image1.jpg",
+      "output": [
+        {
+          "regionType": "bounding-box",
+          "centerX": 0.2919799498746867,
+          "centerY": 0.3317669172932331,
+          "width": 0.3634085213032581,
+          "height": 0.09962406015037595,
+          "classification": "valid",
+          "color": "hsl(105,100%,50%)"
+        }
+      ]
     },
     {
-      "imageUrl": "https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image2.jpg"
+      "imageUrl": "https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image2.jpg",
+      "output": null
     }
-  ],
-  "taskOutput": [
-    [
-      {
-        "regionType": "bounding-box",
-        "centerX": 0.2919799498746867,
-        "centerY": 0.3317669172932331,
-        "width": 0.3634085213032581,
-        "height": 0.09962406015037595,
-        "classification": "valid",
-        "color": "hsl(105,100%,50%)"
-      }
-    ],
-    null
   ]
 }

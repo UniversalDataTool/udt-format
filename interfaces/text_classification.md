@@ -2,9 +2,9 @@
 
 Categorize text.
 
-* Markdown instruction containing instructions
-* List of categories with descriptions
-* Classify into one or more categories.
+- Markdown instruction containing instructions
+- List of categories with descriptions
+- Classify into one or more categories.
 
 ## Schema
 
@@ -27,19 +27,20 @@ Categorize text.
       }
     ]
   },
-  "taskData": [
+  "samples": [
     // These are all different types of task data that are acceptable
     {
-      "document": "Harry"
+      "document": "Harry",
     },
     {
-      "document": "Malfoy"
+      "document": "Malfoy",
     }
   ],
-  // After completion...
-  "taskOutput": [
-    { "label": "gryffindor" },
-    { "label": "slytherin" }
+  "examples": [
+    {
+      // same as samples...
+      output: { "label": "gryffindor" }
+    }
   ]
 }
 ```
