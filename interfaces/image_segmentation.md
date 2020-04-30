@@ -10,9 +10,9 @@
     "type": "image_segmentation",
 
     // A list of labels available
-    "availableLabels": ["human", "dog", "cat"],
+    "labels": ["human", "dog", "cat"],
     /* Also valid:
-    "availableLabels": [
+    "labels": [
       { "id": "human", "name": "Human", "description": "A person." },
       { "id": "dog", "name": "Dog", "description": "A furry four legged creature" },
       { "id": "cat", "name": "Cat", "description": "Furry creature with whiskers" }
