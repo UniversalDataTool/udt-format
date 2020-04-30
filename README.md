@@ -32,18 +32,12 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
   // Interface details
   "interface": { /* see "Interfaces" */ },
   
-  // Data for tasks to be performed
+  // Data for tasks to be performed and output labels
   // E.g. Each task could be 1 image to be annotated, 1 paragraph to be annotated etc.
-  "taskData": [ /* see the task data spec for the chosen interface */ ],
+  "samples": [ /* see the sample data spec for the chosen interface */ ],
   
   // Optional: solution examples, can be used to evaluate workers
   "examples": [ /* see example spec for chosen interface  */ ],
-  
-  // Optional: delivery parameters, e.g. budget or timeframe to complete within
-  "delivery": { /* see delivery spec */ },
-  
-  // Given by vendor after annotation is completed.
-  "taskOutput": [ /* see output spec for chosen interface */ ] 
 }
 ```
 
@@ -68,21 +62,4 @@ Click the link on any interface to see it's full schema, examples, and specifica
 | [text_classification](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/text_classification.md) |  Categorize text.                                             |
 | [text_entity_recognition](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/text_entity_recognition.md) |  Label named entities in text.                                             |
 | [composite](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/composite.md) | Combine multiple UDT interfaces. |
-
-## Delivery
-
-If the dataset is being uploaded to a provider, this provides information regarding your timeline and desired accuracy.
-
-```javascript
-{
-  // Optional: Desired accuracy for the resultant set
-  "targetAccuracy": 0.99,
-
-  // Optional: Target amount of time for the task to be completed in
-  "targetDeliveryTime": "6 hours",
-
-  // Optional: Maximum budget in USD,
-  "maxBudget": 75.00
-}
-```
 
