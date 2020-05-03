@@ -8,7 +8,25 @@ The following items are examples of human annotation tasks...
 - Identifying key words and intent of text conversations
 - Collecting and augmenting data via internet research
 
-To test the UDT format, check out the [Universal Data Tool](https://universaldatatool.com/). Different types of data can be marked using the tool. Old data can be uploaded, or, can be created from a template
+To test the UDT format, check out the [Universal Data Tool](https://universaldatatool.com/).
+
+## FAQ
+
+**What types of data are supported?**
+
+Check out the [interfaces](#interfaces) section.
+
+**How do I reference sample files on my computer?**
+
+If your files on on your computer rather than the internet and not available via a URL,
+use the `file://` protocol instead of `https://`. For example, `file:///home/yourname/Downloads/cat.jpg`
+will link to the cat picture you have in your Downloads directory.
+
+**How do I know if I formatted the file properly?**
+
+1. Paste or upload into the Universal Data Tool (`Setup > Edit JSON`)
+2. If python, use [universaldatatool pip package](https://github.com/UniversalDataTool/python-universaldatatool)
+3. Use a package/module/script from the validators directory
 
 ## Structure
 
