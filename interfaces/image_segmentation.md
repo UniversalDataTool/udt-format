@@ -13,9 +13,9 @@
     "labels": ["human", "dog", "cat"],
     /* Also valid:
     "labels": [
-      { "id": "human", "name": "Human", "description": "A person." },
-      { "id": "dog", "name": "Dog", "description": "A furry four legged creature" },
-      { "id": "cat", "name": "Cat", "description": "Furry creature with whiskers" }
+      { "id": "human", "displayName": "Human", "description": "A person." },
+      { "id": "dog", "displayName": "Dog", "description": "A furry four legged creature" },
+      { "id": "cat", "displayName": "Cat", "description": "Furry creature with whiskers" }
      ],
     */
 
