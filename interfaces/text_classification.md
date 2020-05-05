@@ -39,7 +39,7 @@ Categorize text.
   "examples": [
     {
       // same as samples...
-      "annotation": { "label": "gryffindor" }
+      "annotation": "gryffindor"
     }
   ]
 }
@@ -56,9 +56,7 @@ Annotation will be either the label id or an array of label ids depending `inter
 }
 
 // Annotation
-{
-  "label": "gryffindor"
-}
+"gryffindor"
 ```
 
 For multiple classifications, the annotation will be shown as an array.
