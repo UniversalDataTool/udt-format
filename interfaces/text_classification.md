@@ -31,15 +31,10 @@ Categorize text.
     // These are all different types of task data that are acceptable
     {
       "document": "Harry",
+      "annotation": "gryffindor"
     },
     {
       "document": "Malfoy",
-    }
-  ],
-  "examples": [
-    {
-      // same as samples...
-      "annotation": "gryffindor"
     }
   ]
 }
@@ -52,11 +47,9 @@ Annotation will be either the label id or an array of label ids depending `inter
 ```javascript
 // Input Data
 {
-  "document": "Harry"
+  "document": "Harry",
+  "annotation": "gryffindor"
 }
-
-// Annotation
-"gryffindor"
 ```
 
 For multiple classifications, the annotation will be shown as an array.
@@ -64,11 +57,7 @@ For multiple classifications, the annotation will be shown as an array.
 ```javascript
 // Input Data
 {
-  "document": "Could you label me?"
-}
-
-// Annotation
-{
-  "labels": ["question", "about-labeling"]
+  "document": "Could you label me?",
+  "annotation": ["question", "about-labeling"]
 }
 ```
