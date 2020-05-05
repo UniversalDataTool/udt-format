@@ -1,0 +1,18 @@
+{
+  "name": "udt-format",
+  "version": "0.0.1",
+  "description": "Universal Data Tool format for any type of data and annotation task",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava tests/*.test.js"
+  },
+  "author": "Severin Ibarluzea",
+  "license": "MIT",
+  "dependencies": {
+    "is-url": "^1.2.4",
+    "superstruct": "^0.8.3"
+  },
+  "devDependencies": {
+    "ava": "^3.8.1"
+  }
+}

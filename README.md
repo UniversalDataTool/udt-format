@@ -18,15 +18,19 @@ Check out the [interfaces](#interfaces) section.
 
 **How do I reference sample files on my computer?**
 
-If your files on on your computer rather than the internet and not available via a URL,
-use the `file://` protocol instead of `https://`. For example, `file:///home/yourname/Downloads/cat.jpg`
-will link to the cat picture you have in your Downloads directory.
+If your files are on your computer rather than the internet and not available via a URL,
+use the `file://` protocol instead of `https://`.
+
+For example, `file:///home/yourname/Downloads/cat.jpg` will link to the cat
+picture you have in your Downloads directory.
+
+![cat image](https://cataas.com/cat/b)
 
 **How do I know if I formatted the file properly?**
 
 1. Paste or upload into the Universal Data Tool (`Setup > Edit JSON`)
 2. If python, use [universaldatatool pip package](https://github.com/UniversalDataTool/python-universaldatatool)
-3. Use a package/module/script from the validators directory
+3. Use a package/module/script from the validators directory (e.g. [npm install udt-format](#))
 
 ## Structure
 
@@ -66,20 +70,19 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
 
 Click the link on any interface to see it's full schema, examples, and specification details.
 
-| Interface                                                                                                                                             | Description                                                                        |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| [image_label](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/image_label.md)                         | Assign label(s) to an image or a predefined region of an image                     |
-| [image_segmentation](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/image_segmentation.md)           | Surround region(s) of an image, optionally labeling region(s).                     |
-| video_label                                                                                                                                           | Assign label(s) to a video or region(s)                                            |
-| [data_entry](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/data_entry.md)                           | Retrieve fields from source(s) or the internet.                                    |
-| text_sentiment_analysis                                                                                                                               | Analyze the sentiment of a message.                                                |
-| text_content_moderation                                                                                                                               | Analyze content for profanity, bullying or custom criteria.                        |
-| transcription                                                                                                                                         | Derive text from images or video.                                                  |
-| [audio_transcription](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/audio_transcription.md)         | Derive text from audio.                                                            |
-| deduplication                                                                                                                                         | Compare information and remove duplicates.                                         |
-| text_correction                                                                                                                                       | Proofread text.                                                                    |
-| video_label                                                                                                                                           | Assign label(s) to a video or labels to regions within an image                    |
-| video_segmentation                                                                                                                                    | Surround region(s) containing objects within a video, optionally tagging object(s) |
-| [text_classification](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/text_classification.md)         | Categorize text.                                                                   |
-| [text_entity_recognition](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/text_entity_recognition.md) | Label named entities in text.                                                      |
-| [composite](https://github.com/OpenHumanAnnotation/open-human-annotation-task-format/blob/master/interfaces/composite.md)                             | Combine multiple UDT interfaces.                                                   |
+| Interface                                                                                                                    | Description                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| [image_label](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/image_label.md)                         | Assign label(s) to an image or a predefined region of an image                     |
+| [image_segmentation](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/image_segmentation.md)           | Surround region(s) of an image, optionally labeling region(s).                     |
+| [data_entry](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/data_entry.md)                           | Retrieve fields from source(s) or the internet.                                    |
+| [audio_transcription](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/audio_transcription.md)         | Derive text from audio.                                                            |
+| [video_segmentation](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/video_segmentation.md)           | Surround region(s) containing objects within a video, optionally tagging object(s) |
+| [text_classification](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/text_classification.md)         | Categorize text.                                                                   |
+| [text_entity_recognition](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/text_entity_recognition.md) | Label named entities in text.                                                      |
+| [composite](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/composite.md)                             | Combine multiple UDT interfaces.                                                   |
+| deduplication                                                                                                                | Compare information and remove duplicates.                                         |
+| text_sentiment_analysis                                                                                                      | Analyze the sentiment of a message.                                                |
+| text_content_moderation                                                                                                      | Analyze content for profanity, bullying or custom criteria.                        |
+| text_correction                                                                                                              | Proofread text.                                                                    |
+| video_classification                                                                                                         | Assign label(s) to a video or labels to regions within an image                    |
+| transcription                                                                                                                | Derive text from images or video.                                                  |
