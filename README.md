@@ -24,8 +24,6 @@ use the `file://` protocol instead of `https://`.
 For example, `file:///home/yourname/Downloads/cat.jpg` will link to the cat
 picture you have in your Downloads directory.
 
-![cat image](https://cataas.com/cat/b)
-
 **How do I know if I formatted the file properly?**
 
 1. Paste or upload into the Universal Data Tool (`Setup > Edit JSON`)
