@@ -12,7 +12,7 @@ Place a `brush` attribute on some samples in `taskData` as shown below. The samp
 {
   "interface": {
     "type": "image_classification",
-    "availableLabels": [
+    "labels": [
       "valid",
       "invalid"
     ]
