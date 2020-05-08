@@ -1,4 +1,4 @@
 path,.,imageUrl,annotation,annotation.0.regionType,annotation.0.centerX,annotation.0.centerY,annotation.0.width,annotation.0.height,annotation.0.classification,annotation.0.color
-interface,"{""type"":""image_segmentation"",""availableLabels"":[""valid"",""invalid""],""regionTypesAllowed"":[""bounding-box"",""polygon"",""point""]}",,,,,,,,,
+interface,"{""type"":""image_segmentation"",""labels"":[""valid"",""invalid""],""regionTypesAllowed"":[""bounding-box"",""polygon"",""point""]}",,,,,,,,,
 samples.0,,https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image1.jpg,,bounding-box,0.2919799498746867,0.3317669172932331,0.3634085213032581,0.09962406015037595,valid,"hsl(105,100%,50%)"
 samples.1,,https://s3.amazonaws.com/asset.workaround.online/example-jobs/sticky-notes/image2.jpg,null,,,,,,,
