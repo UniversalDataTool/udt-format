@@ -106,7 +106,7 @@ As the candidate region becomes less aligned, larger than or smaller than target
   "targetDeliveryTime": "24 hours",
   "interface": {
     "selectedTaskType": "image_segmentation",
-    "availableLabels": [
+    "labels": [
       {
         "id": "cat",
         "description": "Feline Mammal"
