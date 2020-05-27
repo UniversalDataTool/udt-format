@@ -1,0 +1,4 @@
+path,document,annotation
+samples.*,"This is the first text sample to be classified",
+samples.*,"This is the second text sample to be classified",
+samples.*,"This text sample has an annotation","some_classification"
