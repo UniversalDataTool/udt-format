@@ -1,6 +1,6 @@
 # Image Segmentation
 
-`image_segmentation` is for training an AI to to determine an area or outline within an image and potentially classify the identified area. Typically classifications come from an existing set of possible answers. For building a set of classifications, see the [set_builder](#set-builder) interface.
+`image_segmentation` is for training an AI to to determine an area or outline within an image and potentially classify the identified area. Typically classifications come from an existing set of possible answers.
 
 ## Schema
 
@@ -20,7 +20,7 @@
     */
 
     // Optional: The type of region allowed. By default, any region is acceptable.
-    "regionTypesAllowed": ["bounding-box", "polygon", "point", "pixel-mask"],
+    "regionTypesAllowed": ["bounding-box", "polygon", "point"],
 
     // What does the region represent?
     "regionDescription": "faces",
