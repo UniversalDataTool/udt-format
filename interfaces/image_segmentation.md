@@ -18,6 +18,8 @@
       { "id": "cat", "displayName": "Cat", "description": "Furry creature with whiskers" }
      ],
     */
+    
+    "allowedArea": { "x": 0, "y": 0, "width": 1, "height": 1 }, // by default, the entire image
 
     // Optional: The type of region allowed. By default, any region is acceptable.
     "regionTypesAllowed": ["bounding-box", "polygon", "point"],
