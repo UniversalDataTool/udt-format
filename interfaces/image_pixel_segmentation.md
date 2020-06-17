@@ -24,7 +24,8 @@
     
     // The engine to use for automatic segmentation (filling in pixels with guesses)
     "autoSegmentationEngine": {
-      "mmgc": { "version": "alpha" } // this is an yet-to-be-named default engine
+      "autoseg": { "version": "alpha" } // this is the default engine
+      // "simple-polygon-mask": {}
     }
   },
   "samples": [
