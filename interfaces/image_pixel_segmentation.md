@@ -20,6 +20,7 @@
     */
     
     // Allowed area to annotate on the image
+    // Note: This can also be placed on individual samples
     "allowedArea": { "x": 0, "y": 0, "width": 1, "height": 1 }, // by default, the entire image
     
     // The engine to use for automatic segmentation (filling in pixels with guesses)
