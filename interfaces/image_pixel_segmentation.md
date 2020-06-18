@@ -25,8 +25,11 @@
     
     // The engine to use for automatic segmentation (filling in pixels with guesses)
     "autoSegmentationEngine": {
-      "autoseg": { "version": "alpha" } // this is the default engine
-      // "simple-polygon-mask": {}
+      "type": "autoseg",
+      "version": "alpha"
+      
+      // alternatively...
+      // "type": "simple"
     }
   },
   "samples": [
