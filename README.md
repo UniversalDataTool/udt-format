@@ -46,9 +46,9 @@ picture you have in your Downloads directory.
 
 The purpose of the Open Human Annotation Format is to make attaining human annotations simple and effective for organizations with AI and machine learning datasets. To this end, this format aims to accomplish all of the following important objectives...
 
-- **Complete Specificity** such that no custom documents or conversations are required to perform the task.
-- A framework for **Predictable Quality**, so the accuracy and tolerance of the annotation dataset is known.
-- A framework for **Instantaneous Quoting** such that AI organizations can instantly see the cost of a project and compare with other providers to get the best rate.
+- **Complete Specificity** such that no additional documents or conversations are required to perform the task.
+- **Simplicity and Human Readability** so that datasets can be easily examined in the JSON format and understood 
+- **Specificity** such that no additional documents or conversations are required to start labeling
 
 ## Interfaces
 
