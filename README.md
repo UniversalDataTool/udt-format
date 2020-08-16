@@ -17,8 +17,7 @@ To test the UDT format, check out the [Universal Data Tool](https://universaldat
   // Interface details
   "interface": { /* see "Interfaces" */ },
 
-  // Data for tasks to be performed and annotation labels
-  // E.g. Each task could be 1 image to be annotated, 1 paragraph to be annotated etc.
+  // Data to be labeled (images, paragraphs, etc.)
   "samples": [ /* see the sample data spec for the chosen interface */ ]
 }
 ```
