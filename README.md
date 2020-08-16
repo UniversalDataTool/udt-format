@@ -10,6 +10,19 @@ The following items are examples of human annotation tasks...
 
 To test the UDT format, check out the [Universal Data Tool](https://universaldatatool.com/).
 
+## Schema
+
+```javascript
+{
+  // Interface details
+  "interface": { /* see "Interfaces" */ },
+
+  // Data for tasks to be performed and annotation labels
+  // E.g. Each task could be 1 image to be annotated, 1 paragraph to be annotated etc.
+  "samples": [ /* see the sample data spec for the chosen interface */ ]
+}
+```
+
 ## FAQ
 
 **What types of data are supported?**
@@ -30,12 +43,6 @@ picture you have in your Downloads directory.
 2. If python, use [universaldatatool pip package](https://github.com/UniversalDataTool/python-universaldatatool)
 3. Use a package/module/script from the validators directory (e.g. [npm install udt-format](#))
 
-## Structure
-
-The scope of this document is broad and expected to undergo many iterations as advancements in the field define new interfaces for analyzing data and new types of datasets. Sections of the API that are subject to change are marked with **_UNSTABLE_**.
-
-> Note: This standard used to be called the ".oha.json" or "Open Human Annotation" JSON format. There may be some old references to "oha".
-
 ## Principles
 
 The purpose of the Open Human Annotation Format is to make attaining human annotations simple and effective for organizations with AI and machine learning datasets. To this end, this format aims to accomplish all of the following important objectives...
@@ -43,26 +50,6 @@ The purpose of the Open Human Annotation Format is to make attaining human annot
 - **Complete Specificity** such that no custom documents or conversations are required to perform the task.
 - A framework for **Predictable Quality**, so the accuracy and tolerance of the annotation dataset is known.
 - A framework for **Instantaneous Quoting** such that AI organizations can instantly see the cost of a project and compare with other providers to get the best rate.
-
-## Terminology
-
-- **Resultant Set** The solution dataset resulting from the human annotations
-
-## Schema
-
-```javascript
-{
-  // Interface details
-  "interface": { /* see "Interfaces" */ },
-
-  // Data for tasks to be performed and annotation labels
-  // E.g. Each task could be 1 image to be annotated, 1 paragraph to be annotated etc.
-  "samples": [ /* see the sample data spec for the chosen interface */ ],
-
-  // Optional: solution examples, can be used to evaluate workers
-  "examples": [ /* see example spec for chosen interface  */ ],
-}
-```
 
 ## Interfaces
 
@@ -85,3 +72,7 @@ Click the link on any interface to see it's full schema, examples, and specifica
 | text_correction                                                                                                              | Proofread text.                                                                    |
 | video_classification                                                                                                         | Assign label(s) to a video or labels to regions within an image                    |
 | transcription                                                                                                                | Derive text from images or video.                                                  |
+
+## Notes
+
+The scope of this document is broad and expected to undergo many iterations as advancements in the field define new interfaces for analyzing data and new types of datasets. Sections of the API that are subject to change are marked with **_UNSTABLE_**.
