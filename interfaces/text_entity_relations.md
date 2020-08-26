@@ -37,6 +37,9 @@ Label relationships between entities in text.
 }
 ```
 
+> The "start" and "end" are indices that are inclusive. That is, `word[start]` is the starting
+> character, and `word[end]` is the ending character of each entity.
+
 ## Examples
 
 ```javascript
