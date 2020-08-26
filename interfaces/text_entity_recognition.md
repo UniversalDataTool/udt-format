@@ -36,8 +36,8 @@ Label named entities in text.
     "document": "This strainer makes a great hat, I'll wear it while I serve spaghetti",
     "annotation": {
       "entities": [
-        { text: "strainer", label: "hat", start: 5, end: 13 },
-        { text: "spaghetti", label: "food", start: 60, end: 69 }
+        { text: "strainer", label: "hat", start: 5, end: 12 },
+        { text: "spaghetti", label: "food", start: 60, end: 68 }
       ]
     }
   ]
