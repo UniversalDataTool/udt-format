@@ -105,7 +105,7 @@ As the candidate region becomes less aligned, larger than or smaller than target
 ```javascript
 {
   "interface": {
-    "selectedTaskType": "image_segmentation",
+    "type": "image_segmentation",
     "labels": [
       {
         "id": "cat",
