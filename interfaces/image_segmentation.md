@@ -104,8 +104,6 @@ As the candidate region becomes less aligned, larger than or smaller than target
 
 ```javascript
 {
-  "targetAccuracy": 0.98,
-  "targetDeliveryTime": "24 hours",
   "interface": {
     "selectedTaskType": "image_segmentation",
     "labels": [
@@ -133,7 +131,6 @@ As the candidate region becomes less aligned, larger than or smaller than target
     {
       "imageUrl": "https://media.gettyimages.com/photos/she-simply-loves-animals-picture-id499806311"
     }
-  ],
-  "examples": []
+  ]
 }
 ```
