@@ -1,6 +1,8 @@
-# Landmark Annotation
+# Image Landmark Annotation
 
-`image_segmentation` is for training an AI to to determine an area or outline within an image and potentially classify the identified area. Typically classifications come from an existing set of possible answers.
+Image landmark annotation allows you to annotate sets of related points, such as the positions on a human body while dancing, positions of legs of a pig on a treadmill, or the movement of landmarks on a face.
+
+Landmark annotation was originally proposed [in this issue](https://github.com/UniversalDataTool/universal-data-tool/issues/285).
 
 ## Schema
 
