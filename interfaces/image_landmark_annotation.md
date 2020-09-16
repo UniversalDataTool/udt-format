@@ -164,7 +164,8 @@ An example KeypointsObject is show below. All `x` and `y` are in percentage of i
         points: {
           head: { x: 0.54, y: 0.2 },
           sternum: { x: 0.57, y: 0.3 },
-          leftElbow: { x: 0.4, y: 0.39 },
+          // when "obscured" is set to true, it means something is blocking or obstructing the visibility of this keypoint in the image
+          leftElbow: { x: 0.4, y: 0.39, obscured: true },
           rightElbow: { x: 0.7, y: 0.32 }
         }
       }
