@@ -161,6 +161,7 @@ An example KeypointsObject is show below. All `x` and `y` are in percentage of i
       "imageUrl": "https://media.gettyimages.com/photos/dog-and-cat-picture-id151350785",
       "annotation": {
         regionType: "keypoints",
+        keypointsDefinitionId: "human",
         points: {
           head: { x: 0.54, y: 0.2 },
           sternum: { x: 0.57, y: 0.3 },
