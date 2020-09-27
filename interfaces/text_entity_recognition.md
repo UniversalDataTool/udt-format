@@ -33,7 +33,7 @@ Label named entities in text.
     }
   ],
   // OPTIONAL
-  "examples": [
+  "examples": [{
     "document": "This strainer makes a great hat, I'll wear it while I serve spaghetti",
     "annotation": {
       "entities": [
@@ -41,7 +41,7 @@ Label named entities in text.
         { text: "spaghetti", label: "food", start: 60, end: 68 }
       ]
     }
-  ]
+  }]
 }
 ```
 
