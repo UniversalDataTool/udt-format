@@ -46,7 +46,11 @@ Label timestamps or durations in audio, video or time series data.
           { "time": 1000, "label": "label for 1 second mark"  }
         ]
       }
-    }
+    },
+    // These are also valid
+    { "audioUrl": "http://example.com/audio.mp3" },
+    { "videoUrl": "http://example.com/video.mp4" },
+    { "csvUrl": "http://example.com/csv_with_time_and_value_columns.csv" }
   ]
 }
 ```
