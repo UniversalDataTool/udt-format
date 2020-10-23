@@ -35,14 +35,73 @@ Label named entities in text.
       "document": "This text document is broken into selectable chunks.",
       
       // annotation can be undefined for new samples
-      "annotation": [
-        { "text": "strainer", "label": "hat", "start": 5, "end": 12 },
-        { "text": "spaghetti", "label": "food", "start": 60, "end": 68 }
-      ]
+      "annotation": {
+        "entities": [
+          {
+            "text": "text document",
+            "label": "hat",
+            "start": 5,
+            "end": 18
+          },
+          {
+            "text": "selectable chunks",
+            "label": "food",
+            "start": 34,
+            "end": 51
+          }
+        ]
+      }
     }
   ]
 }
 ```
 
+<details>
+  <summary>JSON Example without comments</summary>
+  ```json
+  {
+  "interface": {
+    "type": "text_entity_recognition",
+    "description": "# MarkdownDescription",
+    "overlapAllowed": false,
+    "labels": [
+      {
+        "id": "food",
+        "displayName": "Food",
+        "description": "Edible item."
+      },
+      {
+        "id": "hat",
+        "displayName": "Hat",
+        "description": "Something worn on the head."
+      }
+    ]
+  },
+  "samples": [
+    {
+      "document": "This text document is broken into selectable chunks.",
+      "annotation": {
+        "entities": [
+          {
+            "text": "text document",
+            "label": "hat",
+            "start": 5,
+            "end": 18
+          },
+          {
+            "text": "selectable chunks",
+            "label": "food",
+            "start": 34,
+            "end": 51
+          }
+        ]
+      }
+    }
+  ]
+}
+  ```
+</details>
+
 > The "start" and "end" are indices that are inclusive. That is, `word[start]` is the starting
 > character, and `word[end]` is the ending character of each entity.
+
