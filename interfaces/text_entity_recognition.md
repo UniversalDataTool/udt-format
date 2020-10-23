@@ -12,15 +12,16 @@ Label named entities in text.
 {
   "interface": {
     "type": "text_entity_recognition", // or "named_entity_recognition"
-    "description": "# MarkdownDescription",
-    "overlapAllowed": false,
+    
+    "description": "# MarkdownDescription", // optional
+    "overlapAllowed": false, // optional
     
     // You can also provide labels as a string, e.g. ["food", "hat"]
     "labels": [
       {
         "id": "food",
-        "displayName"?: "Food", // optional
-        "description"?: "Edible item." // optional
+        "displayName": "Food", // optional
+        "description": "Edible item." // optional
       },
       {
         "id": "hat",
@@ -32,9 +33,11 @@ Label named entities in text.
   "samples": [
     {
       "document": "This text document is broken into selectable chunks.",
+      
+      // annotation can be undefined for new samples
       "annotation": [
-        { text: "strainer", label: "hat", "start": 5, "end": 12 },
-        { text: "spaghetti", label: "food", "start": 60, "end": 68 }
+        { "text": "strainer", "label": "hat", "start": 5, "end": 12 },
+        { "text": "spaghetti", "label": "food", "start": 60, "end": 68 }
       ]
     }
   ]
