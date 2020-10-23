@@ -30,7 +30,7 @@ Label named entities in text.
       }
     ],
     
-    // The regex that captures a single word
+    // Optional: The regex that captures a single word
     "wordSplitRegex": "[a-zA-ZÀ-ÿ]+"
   },
   "samples": [
