@@ -28,6 +28,9 @@ Label relationships between entities in text.
         "description"?: "X subject is doing Y verb"
       }
     ],
+    
+    // Optional: The regex that captures a single word
+    "wordSplitRegex": "[a-zA-ZÀ-ÿ]+"
   },
   "samples": [
     {
