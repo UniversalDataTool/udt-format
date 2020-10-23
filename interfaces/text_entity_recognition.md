@@ -28,7 +28,10 @@ Label named entities in text.
         "displayName": "Hat", // optional
         "description": "Something worn on the head." // optional
       }
-    ]
+    ],
+    
+    // The regex that captures a single word
+    "wordSplitRegex": "[a-zA-ZÀ-ÿ]+"
   },
   "samples": [
     {
