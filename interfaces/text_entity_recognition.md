@@ -12,55 +12,34 @@ Label named entities in text.
 {
   "interface": {
     "type": "text_entity_recognition", // or "named_entity_recognition"
-    "description"?: MarkdownDescription,
+    "description": "# MarkdownDescription",
     "overlapAllowed": false,
+    
+    // You can also provide labels as a string, e.g. ["food", "hat"]
     "labels": [
       {
         "id": "food",
-        "displayName"?: "Food",
-        "description"?: "Edible item."
+        "displayName"?: "Food", // optional
+        "description"?: "Edible item." // optional
       },
       {
         "id": "hat",
-        "displayName"?: "Hat",
-        "description"?: "Something worn on the head."
+        "displayName": "Hat", // optional
+        "description": "Something worn on the head." // optional
       }
     ]
   },
   "samples": [
     {
-      "document": "This text document is broken into selectable chunks."
-    }
-  ],
-  // OPTIONAL
-  "examples": [{
-    "document": "This strainer makes a great hat, I'll wear it while I serve spaghetti",
-    "annotation": {
-      "entities": [
-        { text: "strainer", label: "hat", start: 5, end: 12 },
-        { text: "spaghetti", label: "food", start: 60, end: 68 }
+      "document": "This text document is broken into selectable chunks.",
+      "annotation": [
+        { text: "strainer", label: "hat", "start": 5, "end": 12 },
+        { text: "spaghetti", label: "food", "start": 60, "end": 68 }
       ]
     }
-  }]
+  ]
 }
 ```
 
 > The "start" and "end" are indices that are inclusive. That is, `word[start]` is the starting
 > character, and `word[end]` is the ending character of each entity.
-
-## Output Format
-
-```javascript
-// Input
-{
-  "document": "This strainer makes a great hat, I'll wear it while I serve spaghetti!"
-}
-
-// Output
-{
-  "entities": [
-    { text: "strainer", label: "hat", start: 5, end: 13 },
-    { text: "spaghetti", label: "food", start: 60, end: 69 }
-  ]
-}
-```
