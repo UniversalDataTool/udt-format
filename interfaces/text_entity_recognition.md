@@ -58,6 +58,7 @@ Label named entities in text.
 
 <details>
   <summary>JSON Example without comments</summary>
+  
   ```json
   {
   "interface": {
