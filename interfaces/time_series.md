@@ -25,15 +25,38 @@ Label timestamps or durations in audio, video or time series data.
     // Can the user manually type a new label? (free text)
     "allowCustomLabels": true,
 
-    // Labels that can be used for timestamps/durations
-    "labels": ["buy here", "sell here"]
+    // Labels that can be used for durations
+    "durationLabels": ["buy during this time", "sell during this time"],
+    
+    // Labels that can be used for timestamps
+    "timestampLabels": ["earnings call starts", "CEO is ousted"],
+    
+    // OPTIONAL: If provided, you can layer or stack graphs
+    "graphs": [ { "keyName": "value" } ] // default
+    
+    /*
+    // Here's an example where we put two pieces of data on the same plot
+    
+    "graphs": [
+      // if two graphs share the same row, they'll be placed on top of eachother
+      // if a row isn't provided, the data corresponding to the key will get it's own row
+      { "keyName": "val1", "row": 0 },
+      { "keyName": "val2", "row": 0 }
+    ]
+    */
   },
   "samples": [
     {
       "timeData": [
         { "time": 0, "value": 100 },
         { "time": 1000, "value": 50 },
-        { "time": 2000, "value": 50 },
+        //...
+        
+        // You can graph any "keyName" from the "graphs" array here
+        { "time": 0, "val1": 0, "val2": 0 },
+        { "time": 1000, "val2": 10 },
+        { "time": 2000, "val1": 100 },
+        { "time": 5000, "val1": 100, "val2": 100 }
       ],
       
       // This will appear in the sample after labeling, can also be provided for viewing data
