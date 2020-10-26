@@ -4,6 +4,29 @@
 
 Label timestamps or durations in audio, video or time series data.
 
+## Simple Example
+
+```json
+{
+  "interface": {
+    "type": "time_series",
+    "time_format": "dates",
+    "enabledTools": ["create-durations", "label-durations"],
+    "durationLabels": ["@seveibar is speaking"],
+  },
+  "samples": [
+    {
+      "audioUrl": "https://example.com/seveibar-podcast.mp3",
+      "annotation": {
+        "durations": [
+          { "start": 500, "end": 2000, "label": "@seveibar is speaking" }
+        ]
+      }
+    }
+  ]
+}
+```
+
 ## Schema
 
 ```javascript
