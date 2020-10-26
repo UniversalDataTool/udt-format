@@ -70,11 +70,14 @@ picture you have in your Downloads directory.
 
 ## Principles
 
-The purpose of the Open Human Annotation Format is to make attaining human annotations simple and effective for organizations with AI and machine learning datasets. To this end, this format aims to accomplish all of the following important objectives...
+The purpose of the Universal Data Tool Format is to make attaining human annotations simple and effective for organizations with AI and machine learning datasets. To this end, this format aims to accomplish all of the following important objectives...
 
 - **Complete Specificity** such that no additional documents or conversations are required to perform the task.
 - **Simplicity and Human Readability** so that datasets can be easily examined in the JSON format and understood 
 - **Specificity** such that no additional documents or conversations are required to start labeling
+
+**The Universal Data Tool Format is built to be a standard format, suitable for many different tools and APIs. The format precedes and defines the
+scope of the [Universal Data Tool](https://universaldatatool.com)**
 
 ## Notes
 
