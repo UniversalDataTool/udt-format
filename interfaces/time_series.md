@@ -79,7 +79,12 @@ Label timestamps or durations in audio, video or time series data.
         { "time": 0, "val1": 0, "val2": 0 },
         { "time": 1000, "val2": 10 },
         { "time": 2000, "val1": 100 },
-        { "time": 5000, "val1": 100, "val2": 100 }
+        { "time": 5000, "val1": 100, "val2": 100 },
+        
+        // Times can also be specified as dates or duration strings
+        { "time": "10.5s", "value": 10 },
+        { "time": "1h 30m", "value": 20 },
+        { "time": "02/27/1996", "value": 30 }
       ],
       
       // This will appear in the sample after labeling, can also be provided for viewing data
