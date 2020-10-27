@@ -10,7 +10,7 @@ Label timestamps or durations in audio, video or time series data.
 {
   "interface": {
     "type": "time_series",
-    "time_format": "dates",
+    "timeFormat": "dates",
     "enabledTools": ["create-durations", "label-durations"],
     "durationLabels": ["@seveibar is speaking"],
   },
@@ -41,7 +41,7 @@ Label timestamps or durations in audio, video or time series data.
     // "duration": Display everything relative to the first data point but converted to a time. This
                    is how a video or audio editing application might display time
                    e.g. "1:20:00" to mean "1 hour and 20 minutes past the start"
-    "time_format": "dates",
+    "timeFormat": "dates",
 
     "enabledTools": ["create-durations", "label-durations", "create-timestamps", "label-timestamps"],
 
