@@ -63,8 +63,8 @@ Label timestamps or durations in audio, video or time series data.
     "graphs": [
       // if two graphs share the same row, they'll be placed on top of eachother
       // if a row isn't provided, the data corresponding to the key will get it's own row
-      { "keyName": "val1", "row": 0 },
-      { "keyName": "val2", "row": 0 }
+      { "keyName": "val1", "row": 0, "color": "red" },
+      { "keyName": "val2", "row": 0, "color": "blue" }
     ]
     */
   },
