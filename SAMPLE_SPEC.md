@@ -53,7 +53,7 @@ Not every interface can accept every type of data. Check the interface specifica
 The unit of `"time"` can be either a duration (time since start) or a unix epoch time. The
 representation of time is configured in the interface.
 
-```json
+```javascript
 {
   "timeData": [
     { "time": 0, "value": 0 }, // Keys other than "value" are fine as well
