@@ -28,7 +28,7 @@ Here's an overview of the different file types/directories:
 
 Each sample file represents a single sample.
 
-```json
+```javascript
 {
   // Any image url can be used here, we're using an s3 url here, but it could be https:// for file://
   "imageUrl": "s3://my-bucket/assets/audio.mp3",
@@ -40,6 +40,8 @@ Each sample file represents a single sample.
 
 If absolute paths to resources are not possible, the word `$PROJECT_DIR` can be used instead.
 
+
+```javascript
 {
   "imageUrl": "$PROJECT_DIR/assets/audio.mp3",
   "annotation": {
