@@ -14,10 +14,10 @@ A summary is redundant when the dataset is provided in full, so this property do
       {
         _id: "id1",
         hasAnnotation: false,
-        version: 0
+        version: 0,
       },
       // ...
-    ]
+    ];
   }
 }
 ```

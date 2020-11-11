@@ -24,7 +24,7 @@ Not every interface can accept every type of data. Check the interface specifica
 
 ```json
 {
-  "audioUrl": "https://example.com/video.mp4"
+  "videoUrl": "https://example.com/video.mp4"
 }
 ```
 
@@ -79,4 +79,3 @@ will be used to determine the keys of each JSON object.
   "pdfUrl": "https://example.com/document.pdf"
 }
 ```
-

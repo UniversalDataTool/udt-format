@@ -1,17 +1,17 @@
-const { superstruct } = require("superstruct")
-const isUrl = require("is-url")
+const { superstruct } = require("superstruct");
+const isUrl = require("is-url");
 
 const struct = superstruct({
   types: {
     url: (v) => isUrl(v) && v.length < 2048,
   },
-})
+});
 
-const { intersection, optional, literal, partial, pick, union, lazy } = struct
+const { intersection, optional, literal, partial, pick, union, lazy } = struct;
 
-const LanguageId = "string" // TODO "en", etc.
+const LanguageId = "string"; // TODO "en", etc.
 
-let Interface
+let Interface;
 
 const AudioTranscriptionInterface = pick({
   type: literal("audio_transcription"),
@@ -19,7 +19,7 @@ const AudioTranscriptionInterface = pick({
   language: optional(LanguageId),
   phraseBank: union(["url", ["string"]]),
   transcriptionType: union([literal("simple"), literal("proper")]),
-})
+});
 
 const CompositeInterface = pick({
   type: literal("composite"),
@@ -29,7 +29,7 @@ const CompositeInterface = pick({
       interface: lazy(() => Interface),
     }),
   ],
-})
+});
 
 const TextClassificationInterface = pick({
   type: literal("text_classification"),
@@ -45,7 +45,7 @@ const TextClassificationInterface = pick({
       }),
     ],
   ]),
-})
+});
 
 const TextEntityRecognitionInterface = pick({
   type: union([
@@ -62,15 +62,15 @@ const TextEntityRecognitionInterface = pick({
       }),
     ],
   ]),
-})
+});
 
 const VideoSegmentationInterface = pick({
   type: literal("video_segmentation"),
-})
+});
 
 const DataEntryInterface = pick({
   type: literal("data_entry"),
-})
+});
 
 const ImageClassificationInterface = pick({
   type: literal("image_classification"),
@@ -82,7 +82,7 @@ const ImageClassificationInterface = pick({
       description: optional("string"),
     }),
   ],
-})
+});
 
 const ImageSegmentationInterface = pick({
   type: literal("image_segmentation"),
@@ -111,7 +111,7 @@ const ImageSegmentationInterface = pick({
   minimumRegionSize: optional("number"),
   overlappingRegions: optional("boolean"),
   regionMinAcceptableDifference: optional("number"),
-})
+});
 
 Interface = union([
   AudioTranscriptionInterface,
@@ -121,13 +121,13 @@ Interface = union([
   VideoSegmentationInterface,
   TextClassificationInterface,
   CompositeInterface,
-])
+]);
 
-let Annotation
-const ImageClassificationAnnotation = pick({})
-const ImageSegmentationAnnotation = pick({})
-const VideoSegmentationAnnotation = pick({})
-const DataEntryAnnotation = "object"
+let Annotation;
+const ImageClassificationAnnotation = pick({});
+const ImageSegmentationAnnotation = pick({});
+const VideoSegmentationAnnotation = pick({});
+const DataEntryAnnotation = "object";
 const TextEntityRecognitionAnnotation = pick({
   entities: [
     pick({
@@ -137,16 +137,16 @@ const TextEntityRecognitionAnnotation = pick({
       end: "number",
     }),
   ],
-})
-const TextClassificationAnnotation = "string"
-const AudioTranscriptionAnnotation = pick({})
+});
+const TextClassificationAnnotation = "string";
+const AudioTranscriptionAnnotation = pick({});
 const CompositeAnnotation = struct.function((value) => {
-  if (typeof value !== "object") return false
+  if (typeof value !== "object") return false;
   for (const subValue of Object.values(value)) {
-    if (!Annotation(subValue)) return false
+    if (!Annotation(subValue)) return false;
   }
-  return true
-})
+  return true;
+});
 
 Annotation = union([
   "null",
@@ -157,11 +157,11 @@ Annotation = union([
   TextEntityRecognitionAnnotation,
   TextClassificationAnnotation,
   CompositeAnnotation,
-])
+]);
 
 const BaseSample = pick({
   customId: optional("string"),
-})
+});
 
 const GenericSample = intersection([
   BaseSample,
@@ -177,7 +177,7 @@ const GenericSample = intersection([
     videoFrameAt: "number",
     surveyjs: "object",
   }),
-])
+]);
 
 const AudioTranscriptionSample = intersection([
   BaseSample,
@@ -185,14 +185,14 @@ const AudioTranscriptionSample = intersection([
     audioUrl: "url",
     annotation: optional(AudioTranscriptionAnnotation),
   }),
-])
+]);
 
 const DataEntrySample = intersection([
   GenericSample,
   pick({
     annotation: optional(AudioTranscriptionAnnotation),
   }),
-])
+]);
 
 const TextEntityRecognitionSample = intersection([
   BaseSample,
@@ -200,7 +200,7 @@ const TextEntityRecognitionSample = intersection([
     document: "string",
     annotation: optional(TextEntityRecognitionAnnotation),
   }),
-])
+]);
 
 const TextClassificationSample = intersection([
   BaseSample,
@@ -208,7 +208,7 @@ const TextClassificationSample = intersection([
     document: "string",
     annotation: optional(TextClassificationAnnotation),
   }),
-])
+]);
 
 const CompositeSample = intersection([
   GenericSample,
@@ -216,7 +216,7 @@ const CompositeSample = intersection([
     document: "string",
     annotation: optional(CompositeAnnotation),
   }),
-])
+]);
 
 const ImageSegmentationSample = intersection([
   BaseSample,
@@ -228,7 +228,7 @@ const ImageSegmentationSample = intersection([
   pick({
     annotation: optional(ImageSegmentationAnnotation),
   }),
-])
+]);
 
 const ImageClassificationSample = intersection([
   BaseSample,
@@ -240,7 +240,7 @@ const ImageClassificationSample = intersection([
   pick({
     annotation: optional(ImageClassificationAnnotation),
   }),
-])
+]);
 
 const VideoSegmentationSample = intersection([
   BaseSample,
@@ -248,7 +248,7 @@ const VideoSegmentationSample = intersection([
     videoUrl: "string",
     annotation: optional(VideoSegmentationAnnotation),
   }),
-])
+]);
 
 const Sample = union([
   CompositeSample,
@@ -258,7 +258,7 @@ const Sample = union([
   ImageSegmentationSample,
   VideoSegmentationSample,
   DataEntrySample,
-])
+]);
 
 const UDTFormat = union([
   pick({
@@ -285,7 +285,7 @@ const UDTFormat = union([
     interface: DataEntryInterface,
     samples: optional([DataEntrySample]),
   }),
-])
+]);
 
 module.exports = {
   default: UDTFormat,
@@ -293,4 +293,4 @@ module.exports = {
   Sample,
   Annotation,
   Interface,
-}
+};

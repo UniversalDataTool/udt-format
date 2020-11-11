@@ -13,10 +13,10 @@ Landmark annotation was originally proposed [in this issue](https://github.com/U
 
     // Different configurations of poses / keypoints
     "keypointDefinitions": {
-      
+
       // This is a pose definition for the upper half of a human
       human: {
-      
+
         // Each landmark is a point on the pose.
         landmarks: {
           head: {
@@ -43,7 +43,7 @@ Landmark annotation was originally proposed [in this issue](https://github.com/U
             defaultPosition: [0.05, 0],
           },
         },
-        
+
         // The connections will determine what lines are drawn between points, they
         // are only aesthetic
         connections: [
@@ -82,9 +82,9 @@ Landmark annotation was originally proposed [in this issue](https://github.com/U
 
 Different regions have different JSON representations. All the numbers are represented as a percentage of the image width and height, not as pixels. Using the image width and height, they can easily be converted to pixels.
 
-| Region         | Description                                             | JSON Representation                                                                        |
-| -------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| `keypoints`    | One pose or set of keypoints                            | `{ regionType: "keypoints", points: KeypointsObject }`                                     |
+| Region      | Description                  | JSON Representation                                    |
+| ----------- | ---------------------------- | ------------------------------------------------------ |
+| `keypoints` | One pose or set of keypoints | `{ regionType: "keypoints", points: KeypointsObject }` |
 
 ### `KeypointsObject`
 
@@ -102,7 +102,6 @@ An example KeypointsObject is show below. All `x` and `y` are in percentage of i
 }
 ```
 
-
 ## Examples
 
 ### Animal Classification
@@ -114,10 +113,10 @@ An example KeypointsObject is show below. All `x` and `y` are in percentage of i
 
     // Different configurations of poses / keypoints
     "keypointDefinitions": {
-      
+
       // This is a pose definition for the upper half of a human
       human: {
-      
+
         // Each landmark is a point on the pose.
         landmarks: {
           head: {
@@ -144,7 +143,7 @@ An example KeypointsObject is show below. All `x` and `y` are in percentage of i
             defaultPosition: [0.05, 0],
           },
         },
-        
+
         // The connections will determine what lines are drawn between points, they
         // are only aesthetic
         connections: [

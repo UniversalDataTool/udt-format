@@ -20,7 +20,6 @@ more details that clarify the intent of the project to the annotator, which can 
 7. Tests with incomplete UDT mini-datasets that need to be completed
 8. Tests where answers are not given (Final Exam)
 
-
 ## Example
 
 ```javascript

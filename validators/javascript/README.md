@@ -3,7 +3,7 @@
 `npm install udt-format`
 
 ```javascript
-import UDTFormat, { Sample } from "udt-format"
+import UDTFormat, { Sample } from "udt-format";
 
 // Throws error if invalid UDT Format
 UDTFormat({
@@ -11,9 +11,9 @@ UDTFormat({
     type: "audio_transcription",
   },
   samples: [],
-})
+});
 
 Sample({
   audioUrl: "https://asdasd",
-})
+});
 ```

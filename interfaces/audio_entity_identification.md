@@ -9,9 +9,9 @@ Identify time ranges within an audio sample e.g. identify speakers in an audio s
   "interface": {
     "type": "audio_entity_identification", // or "audio_speaker_identification"
     "description": "MarkdownDescription",
-    
+
     "labels": ["dog-barking", "human"],
-    
+
     // These are used if you also want to do a transcription. See audio_transcription for more details.
     "transcribe": false,
     "language"?: LanguageString, // defaults to english
@@ -33,7 +33,7 @@ Identify time ranges within an audio sample e.g. identify speakers in an audio s
             start: 1200, // start time in ms of speaker
             end: 3500,   // end time in ms of speaker
             classification: "dog-barking",
-            
+
             // Only if transcribe: true
             transcription: "..."
         ]
@@ -41,3 +41,4 @@ Identify time ranges within an audio sample e.g. identify speakers in an audio s
     }
   ]
 }
+```

@@ -26,27 +26,26 @@ To test the UDT format, check out the [Universal Data Tool](https://universaldat
 
 Click the link on any interface to see it's full schema, examples, and specification details.
 
-| Interface                                                                                                                    | Description                                                                        |
-| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| [image_label](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/image_label.md)                         | Assign label(s) to an image or a predefined region of an image                     |
-| [image_segmentation](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/image_segmentation.md)           | Surround region(s) of an image, optionally labeling region(s).                     |
-| [image_pixel_segmentation](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/image_pixel_segmentation.md)           | Label or classify pixels in an image (AKA Full Image Segmentation).                     |
-| [data_entry](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/data_entry.md)                           | Retrieve fields from source(s) or the internet.                                    |
-| [audio_transcription](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/audio_transcription.md)         | Derive text from audio.                                                            |
-| [video_segmentation](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/video_segmentation.md)           | Surround region(s) containing objects within a video, optionally tagging object(s) |
-| [text_classification](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/text_classification.md)         | Categorize text.                                                                   |
-| [text_entity_recognition](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/text_entity_recognition.md) | Label named entities in text.                                                      |
-| [text_entity_relations](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/text_entity_relations.md) | Label relationships or dependencies between text entities.                                                      |
-| [audio_entity_identification](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/audio_entity_identification.md) | Identify timestamps and transcribe audio (speaker identification).                                                      |
-| [time_series](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/time_series.md) | Identify timestamps and durations in a variety of time series data sources.                                                      |
-| deduplication                                                                                                                | Compare information and remove duplicates.                                         |
-| text_sentiment_analysis                                                                                                      | Analyze the sentiment of a message.                                                |
-| text_content_moderation                                                                                                      | Analyze content for profanity, bullying or custom criteria.                        |
-| text_correction                                                                                                              | Proofread text.                                                                    |
-| video_classification                                                                                                         | Assign label(s) to a video or labels to regions within an image                    |
-| visual_transcription                                                                                                                | Derive text from images or video.                                                  |
-| [composite](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/composite.md)                             | Combine multiple UDT interfaces.                                                   |
-
+| Interface                                                                                                                            | Description                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| [image_label](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/image_label.md)                                 | Assign label(s) to an image or a predefined region of an image                     |
+| [image_segmentation](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/image_segmentation.md)                   | Surround region(s) of an image, optionally labeling region(s).                     |
+| [image_pixel_segmentation](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/image_pixel_segmentation.md)       | Label or classify pixels in an image (AKA Full Image Segmentation).                |
+| [data_entry](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/data_entry.md)                                   | Retrieve fields from source(s) or the internet.                                    |
+| [audio_transcription](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/audio_transcription.md)                 | Derive text from audio.                                                            |
+| [video_segmentation](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/video_segmentation.md)                   | Surround region(s) containing objects within a video, optionally tagging object(s) |
+| [text_classification](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/text_classification.md)                 | Categorize text.                                                                   |
+| [text_entity_recognition](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/text_entity_recognition.md)         | Label named entities in text.                                                      |
+| [text_entity_relations](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/text_entity_relations.md)             | Label relationships or dependencies between text entities.                         |
+| [audio_entity_identification](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/audio_entity_identification.md) | Identify timestamps and transcribe audio (speaker identification).                 |
+| [time_series](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/time_series.md)                                 | Identify timestamps and durations in a variety of time series data sources.        |
+| deduplication                                                                                                                        | Compare information and remove duplicates.                                         |
+| text_sentiment_analysis                                                                                                              | Analyze the sentiment of a message.                                                |
+| text_content_moderation                                                                                                              | Analyze content for profanity, bullying or custom criteria.                        |
+| text_correction                                                                                                                      | Proofread text.                                                                    |
+| video_classification                                                                                                                 | Assign label(s) to a video or labels to regions within an image                    |
+| visual_transcription                                                                                                                 | Derive text from images or video.                                                  |
+| [composite](https://github.com/UniversalDataTool/udt-format/blob/master/interfaces/composite.md)                                     | Combine multiple UDT interfaces.                                                   |
 
 ## FAQ
 
@@ -73,7 +72,7 @@ picture you have in your Downloads directory.
 The purpose of the Universal Data Tool Format is to make attaining human annotations simple and effective for organizations with AI and machine learning datasets. To this end, this format aims to accomplish all of the following important objectives...
 
 - **Complete Specificity** such that no additional documents or conversations are required to perform the task.
-- **Simplicity and Human Readability** so that datasets can be easily examined in the JSON format and understood 
+- **Simplicity and Human Readability** so that datasets can be easily examined in the JSON format and understood
 - **Specificity** such that no additional documents or conversations are required to start labeling
 
 **The Universal Data Tool Format is built to be a standard format, suitable for many different tools and APIs. The format precedes and defines the
