@@ -20,9 +20,9 @@ The diagram below shows an example of the directory structure.
 
 Here's an overview of the different file types/directories:
 
-* **index.json**: An index containing interface details of the dataset and any other top-level UDT json keys
-* **assets**: Any files used within samples
-* **samples**: Exclusively UDT sample files. Each JSON file within represents a single sample of `dataset.samples`
+- **index.json**: An index containing interface details of the dataset and any other top-level UDT json keys
+- **assets**: Any files used within samples
+- **samples**: Exclusively UDT sample files. Each JSON file within represents a single sample of `dataset.samples`
 
 ## sample.json
 
@@ -40,7 +40,6 @@ Each sample file represents a single sample.
 
 If absolute paths to resources are not possible, the word `$PROJECT_DIR` can be used instead.
 
-
 ```javascript
 {
   "imageUrl": "$PROJECT_DIR/assets/audio.mp3",
@@ -49,4 +48,3 @@ If absolute paths to resources are not possible, the word `$PROJECT_DIR` can be 
   }
 }
 ```
-

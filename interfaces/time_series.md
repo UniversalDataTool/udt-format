@@ -12,7 +12,7 @@ Label timestamps or durations in audio, video or time series data.
     "type": "time_series",
     "timeFormat": "dates",
     "enabledTools": ["create-durations", "label-durations"],
-    "durationLabels": ["@seveibar is speaking"],
+    "durationLabels": ["@seveibar is speaking"]
   },
   "samples": [
     {
@@ -33,7 +33,7 @@ Label timestamps or durations in audio, video or time series data.
 {
   "interface": {
     "type": "time_series",
-    
+
     // time_format determines how the time axis will be displayed to the user
     // "dates": Display as dates with time
     // "none": Display time as a number. For example, if each data point was taken at a new iteration
@@ -50,16 +50,16 @@ Label timestamps or durations in audio, video or time series data.
 
     // Labels that can be used for durations
     "durationLabels": ["buy during this time", "sell during this time"],
-    
+
     // Labels that can be used for timestamps
     "timestampLabels": ["earnings call starts", "CEO is ousted"],
-    
+
     // OPTIONAL: If provided, you can layer or stack graphs
     "graphs": [ { "keyName": "value" } ] // default
-    
+
     /*
     // Here's an example where we put two pieces of data on the same plot
-    
+
     "graphs": [
       // if two graphs share the same row, they'll be placed on top of eachother
       // if a row isn't provided, the data corresponding to the key will get it's own row
@@ -74,19 +74,19 @@ Label timestamps or durations in audio, video or time series data.
         { "time": 0, "value": 100 },
         { "time": 1000, "value": 50 },
         //...
-        
+
         // You can graph any "keyName" from the "graphs" array here
         { "time": 0, "val1": 0, "val2": 0 },
         { "time": 1000, "val2": 10 },
         { "time": 2000, "val1": 100 },
         { "time": 5000, "val1": 100, "val2": 100 },
-        
+
         // Times can also be specified as dates or duration strings
         { "time": "10.5s", "value": 10 },
         { "time": "1h 30m", "value": 20 },
         { "time": "02/27/1996", "value": 30 }
       ],
-      
+
       // This will appear in the sample after labeling, can also be provided for viewing data
       // Times will be in the same format as the "timeData", e.g. unix epoch milliseconds
       "annotation": {
