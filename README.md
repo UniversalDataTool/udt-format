@@ -67,6 +67,19 @@ picture you have in your Downloads directory.
 2. If python, use [universaldatatool pip package](https://github.com/UniversalDataTool/python-universaldatatool)
 3. Use a package/module/script from the validators directory (e.g. [npm install udt-format](#))
 
+**What is a UDT dataset? What is a UDT Sample?**
+
+A UDT Dataset Object is the JSON object containing the `samples` and `interface`. A UDT Dataset file is written
+`dataset.udt.json`. A dataset gives you everything you need to view and edit data.
+
+A UDT Sample Object is the JSON object containing things like `imageUrl` and an `annotation`. They are contained within
+a dataset. A Sample represents a unit of work for a labeler (as opposed to a single piece of data). For example, you might
+have 4 Samples corresponding to different sections of a single image. However, most of the time there is one Sample for
+each data asset (image, video, document etc.)
+
+> In the [filesystem proposal](https://github.com/UniversalDataTool/udt-format/blob/master/proposals/filesystem.md) samples
+> are saved to separate files with the format `sample-<SAMPLE_ID>.json`, but Sample Objects are within a dataset file.
+
 ## Principles
 
 The purpose of the Universal Data Tool Format is to make attaining human annotations simple and effective for organizations with AI and machine learning datasets. To this end, this format aims to accomplish all of the following important objectives...
