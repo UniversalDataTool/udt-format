@@ -78,7 +78,7 @@ have 4 Samples corresponding to different sections of a single image. However, m
 each data asset (image, video, document etc.)
 
 > In the [filesystem proposal](https://github.com/UniversalDataTool/udt-format/blob/master/proposals/filesystem.md) samples
-> are saved to separate files with the format `sample-<SAMPLE_ID>.json`, but Sample Objects are within a dataset file.
+> are saved to separate files with the format `sample-<SAMPLE_ID>.json`, but usually Sample Objects are within a dataset file.
 
 ## Principles
 
