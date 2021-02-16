@@ -105,3 +105,71 @@ Label timestamps or durations in audio, video or time series data.
   ]
 }
 ```
+
+## CSV Format
+
+Each row of the CSV is a datapoint. You'll want a column called "date" or "time", then you can have columns named
+anything you want, just make sure you specify the column names in `interface.graphs`. For example, let's say you
+want to load in [tesla.csv](https://gist.githubusercontent.com/philaturner/644b3e8bd17641766d90f38d475edcc6/raw/a6c35e97a89eda49098def90fe2e750ceb898f79/tesla.csv), you'll need to have a UDT file that looks like this:
+
+```javascript
+{
+  "name": "New time_series Dataset",
+  "interface": {
+    "type": "time_series",
+    "timeFormat": "dates",
+    "enabledTools": [
+      "create-durations",
+      "label-durations"
+    ],
+    "graphs": [
+      {
+        "keyName": "high",
+        
+      },
+      {
+        "keyName": "low"
+      }
+    ]
+  },
+  "samples": [
+    {
+      "_id": "sdjceu96y",
+      "csvUrl": "https://gist.githubusercontent.com/philaturner/644b3e8bd17641766d90f38d475edcc6/raw/a6c35e97a89eda49098def90fe2e750ceb898f79/tesla.csv"
+    }
+  ]
+}
+```
+
+You can also combine lines so they appear on the same row using the `row` key (this looks a lot better for the
+tesla data!)
+
+```javascript
+{
+  "name": "New time_series Dataset",
+  "interface": {
+    "type": "time_series",
+    "timeFormat": "dates",
+    "enabledTools": [
+      "create-durations",
+      "label-durations"
+    ],
+    "graphs": [
+      {
+        "keyName": "high",
+        "row": 0
+      },
+      {
+        "keyName": "low",
+        "row": 0
+      }
+    ]
+  },
+  "samples": [
+    {
+      "_id": "sdjceu96y",
+      "csvUrl": "https://gist.githubusercontent.com/philaturner/644b3e8bd17641766d90f38d475edcc6/raw/a6c35e97a89eda49098def90fe2e750ceb898f79/tesla.csv"
+    }
+  ]
+}
+```
